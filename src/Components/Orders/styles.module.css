@@ -1,0 +1,25 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 80px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+.parent:hover  {
+  border: solid 1px #fff;
+}
+
+.returns {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.orders {
+  font-size: 14px;
+  font-weight: 800;
+}

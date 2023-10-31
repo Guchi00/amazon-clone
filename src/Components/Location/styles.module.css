@@ -1,0 +1,71 @@
+.btn {
+  height: 50px;
+  width: 150px;
+  margin-top: 5px;
+  background-color: rgb(35, 31, 32) !important;
+  border: solid 1px rgb(35, 31, 32);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: solid 1px white;
+  border-radius: 3px;
+}
+
+.deliver_to {
+  margin-right: 30px;
+  color: #cccccc;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.a {
+  display: flex;
+}
+
+.customer_location {
+  font-weight: 800;
+  font-size: 15px;
+  margin-top: 7px;
+}
+
+.customer_icon_location {
+  margin-bottom: 10px;
+}
+
+.choose_location {
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-size: 18px;
+  border: solid 1px;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  background-color: rgb(240, 242, 242);
+
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.update_location_link {
+  height: 30px;
+  width: 100%;
+  background-color: rgb(255, 215, 18);
+  border: rgb(255, 215, 18);
+  border-radius: 5px;
+  color: black;
+}
+
+.done {
+  height: 30px;
+  width: 70px;
+  margin-left: 310px;
+  margin-top: 30px;
+  background-color: rgb(255, 215, 18);
+  border: rgb(255, 215, 18);
+  border-radius: 5px;
+}

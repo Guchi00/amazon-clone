@@ -1,0 +1,125 @@
+.holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5px;
+  color: #fff;
+  height: 48px;
+  width: 130px;
+  cursor: pointer;
+}
+
+.holder:hover {
+  border: solid 1px white;
+  border-radius: 3px;
+}
+
+.hello_signin {
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 25px;
+}
+
+.account_and_list {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.parent {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin_btn {
+  background-color: rgb(255, 215, 18);
+  width: 220px;
+  height: 32px;
+  border: solid 1px rgb(255, 215, 18);
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.signin_btn:hover {
+  text-decoration-line: underline;
+  text-decoration-color:rgb(199, 81, 31);
+}
+
+.new {
+  margin-top: 5px;
+}
+
+.new_customer {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.start_here {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.start_here:hover {
+  color: rgb(199, 81, 31);
+  text-decoration-line: underline;
+}
+
+.content {
+  border-top: solid 1px rgb(238, 238, 238);
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.left_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.your_list {
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.left_content_a {
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 2px;
+  margin-right: 100px;
+}
+
+.left_content_a:hover {
+  color: rgb(199, 81, 31);
+  text-decoration-line: underline;
+}
+
+.right_content {
+  display: flex;
+  flex-direction: column;
+  border-left: solid 1px rgb(238, 238, 238);
+  margin-top: 15px;
+}
+
+.your_account {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.right_content_a {
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+
+.right_content_a:hover {
+  color: rgb(199, 81, 31);
+  text-decoration-line: underline;
+}

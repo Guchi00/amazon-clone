@@ -1,0 +1,43 @@
+.space {
+  width: 50px;
+  height: 40px;
+  border: solid 1px;
+  background-color: rgb(237, 237, 237);
+  margin-top: 10px;
+  margin-left: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+}
+
+.space:hover {
+  border-color: rgb(254, 190, 104);
+  border: solid 2.5px rgb(229, 144, 46);
+}
+
+.all {
+  margin-left: 5px;
+  font-size: 13px;
+  color: #666666;
+}
+
+.arrowdownIcon {
+  font-size: 19px;
+  color: #666666;
+}
+
+.showSearch {
+  width: 940px;
+  height: 40px;
+  margin-top: 11px;
+  border-right: none;
+  border-top-left-radius: 5px;
+}
+
+.showSearch .ant-select-selector {
+  border-radius: 0px;
+}
+
+.showSearch .ant-select-selector:hover {
+  border-color: rgb(254, 190, 104);
+}

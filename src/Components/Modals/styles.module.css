@@ -1,0 +1,72 @@
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  height: 250px;
+  width: 390px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.choose_location_parent {
+  height: 60px;
+  width: 100%;
+  border: solid 1px rgb(213, 217, 217);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  align-items: center;
+  background-color: rgb(240, 242, 242);
+  border-top: none;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.choose_location {
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.contents {
+  font-size: 12px;
+  color: rgb(87, 89, 89);
+  margin-left: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.update_location_btn {
+  width: 350px;
+  height: 32px;
+  font-size: 13px;
+  background-color: rgb(255, 215, 18);
+  border: solid 1px  rgb(255, 215, 18);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.done {
+  height: 30px;
+  width: 60px;
+  margin-left: 270px;
+  margin-top: 30px;
+  background-color: rgb(255, 215, 18);
+  border: rgb(255, 215, 18);
+  border-radius: 5px;
+  cursor: pointer;
+}

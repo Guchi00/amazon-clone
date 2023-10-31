@@ -1,0 +1,125 @@
+.parent {
+  width: 220px;
+  /* height: 400px; */
+}
+
+.language_option {
+  height: 48px;
+  width: 75px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.language_option:hover{
+  border: solid 1px white;
+  border-radius: 3px;
+}
+
+.us_flag {
+  width: 20px;
+  height: 13px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.en {
+  color: #fff;
+  font-weight: 800;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.change_language {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.learn_more {
+  font-size: 12px;
+  margin-left: 10px;
+  color:rgb(3, 69, 62)
+}
+
+.learn_more:hover {
+  color: rgb(199, 81, 31);
+  text-decoration-line: underline;
+}
+
+.input_button {
+  margin-top: 10px;
+  accent-color: rgb(240, 87, 5);
+}
+
+.language_labels {
+  font-weight: 500;
+}
+
+.content {
+  margin-top: 15px;
+  border-top: solid 1px rgb(238, 238, 238);
+}
+
+.third_content {
+  margin-top: 15px;
+  border-top: solid 1px rgb(238, 238, 238);
+  display: flex;
+}
+
+.change_currency {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+#learn_more_2nd {
+  margin-top: 10px;
+}
+
+.change_dollar {
+  display: flex;
+  margin-top: 10px;
+}
+
+.usd {
+  font-weight: 500;
+}
+
+.change {
+  font-size: 12px;
+  margin-left: 10px;
+  color:rgb(3, 69, 62);
+  margin-left: 40px;
+}
+
+.change:hover {
+  color: rgb(199, 81, 31);
+  text-decoration-line: underline;
+}
+
+.shop_on_amazon {
+  border-top: solid 1px rgb(238, 238, 238);
+  margin-top: 12px;
+}
+
+.us_flag_2nd {
+  width: 20px;
+  height: 13px;
+  margin-top: 15px;
+}
+
+.shopping_text {
+  margin-left: 10px;
+}
+
+.change_country_region {
+  margin-top: 12px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.region:hover {
+  text-decoration: underline;
+  text-decoration-color:rgb(199, 81, 31);
+}
