@@ -5,7 +5,6 @@ import styles from "./styles.module.css";
 
 export function Register() {
   return (
-    <>
     <div className={styles.parent}>
       <div className={styles.amazon_logo_parent}>
         <img
@@ -14,6 +13,7 @@ export function Register() {
           className={styles.create_account_amazon_logo}
         />
       </div>
+
       <div className={styles.form_parent}>
         <form>
           <div className={styles.wrap}>
@@ -31,8 +31,8 @@ export function Register() {
             <span className={styles.text_privacy_policy}>By creating account, you agree to Amazon's <br></br> <Link to="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088" style={{textDecoration: "none"}}><span className={styles.diff_styling}>Conditions of Use </span></Link>and <Link to="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496" style={{textDecoration: "none"}}><span className={styles.diff_styling}>Privacy Notice.</span></Link></span>
 
             <div className={styles.form_last_wrap}>
-            <span className={styles.text_already_have_account}>Already have an account?<Link to="/login" style={{ textDecoration: 'none' }}> <span className={styles.sign_in}>Sign in<ArrowRightIcon className={styles.arrows}/></span></Link></span>
-            <span className={styles.text_already_have_account}>Buying for work? <Link to="/login" style={{ textDecoration: 'none' }}><span className={styles.sign_in}>Create a free business account<ArrowRightIcon className={styles.arrows}/></span></Link></span>
+            <span className={styles.text_already_have_account}>Already have an account?<Link to="/login" style={{ textDecoration: 'none' }}> <span className={styles.sign_in}>Sign in<ArrowRightIcon className={styles.direction_arrow}/></span></Link></span>
+            <span className={styles.text_already_have_account}>Buying for work? <Link to="/login" style={{ textDecoration: 'none' }}><span className={styles.sign_in}>Create a free business account<ArrowRightIcon className={styles.direction_arrow}/></span></Link></span>
             </div>
            
           </div>
@@ -48,6 +48,5 @@ export function Register() {
         <span className={styles.inc}>© 1996-2023, Amazon.com, Inc. or its affiliates</span>
       </div>
     </div>
-    </>
   );
 }

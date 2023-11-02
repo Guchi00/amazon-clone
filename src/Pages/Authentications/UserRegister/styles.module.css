@@ -47,6 +47,7 @@
   width: 92%;
   border: solid 1px rgb(148, 148, 148);
   border-radius: 3px;
+  margin-top: 5px;
 }
 
 .text_password_instructions {
@@ -114,7 +115,7 @@
   margin-bottom: 15px;
 }
 
-.arrows {
+.direction_arrow {
   font-size: 16px;
 }
 
