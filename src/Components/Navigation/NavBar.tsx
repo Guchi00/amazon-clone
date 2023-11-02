@@ -14,7 +14,7 @@ export const NavBar = () => {
     <div>
       <div className={styles.first_nav}>
         <div  className={styles.parent_amazon_logo}>
-          <img src="https://companieslogo.com/img/orig/AMZN_BIG.D-8fb0be81.png?t=1632523695" alt="amazon-logo"  className={styles.amazon_logo}/>
+          <img src="https://companieslogo.com/img/orig/AMZN_BIG.D-8fb0be81.png?t=1632523695" alt="amazon-logo" className={styles.amazon_logo}/>
         </div>
         <AddressButton />
         <ProductsDropdownMenu />
