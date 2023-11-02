@@ -1,0 +1,149 @@
+.parent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.amazon_logo_parent {
+  height: 70px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create_account_amazon_logo {
+  height: 145px;
+}
+
+.form_parent {
+  /* height: 550px; */
+  width: 350px;
+  border: solid 1px rgb(221, 221, 221);
+  border-radius: 7px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.text_create_account {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.label {
+  margin-top: 17px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.inputs {
+  height: 27px;
+  width: 92%;
+  border: solid 1px rgb(148, 148, 148);
+  border-radius: 3px;
+}
+
+.text_password_instructions {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.i {
+  color: rgb(53, 136, 170);
+  font-style: italic;
+}
+
+.continue_btn {
+  width: 90%;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 215, 18);
+  border: solid 1px rgb(255, 215, 18);
+  cursor: pointer;
+}
+
+.text_privacy_policy {
+  font-size: 12px;
+  margin-top: 27px;
+  font-weight: 500;
+  height: 60px;
+  width: 300px;
+  border-bottom:  solid 1px rgb(247, 247, 247);
+  box-shadow: 0 4px 6px -6px  #6a6868;
+}
+
+.diff_styling {
+  color: rgb(0, 102, 192);
+}
+
+.diff_styling:hover {
+  color: rgb(196, 85, 0);
+}
+
+
+.text_already_have_account {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.sign_in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  color: rgb(0, 102, 192);
+}
+
+.sign_in:hover {
+  color: rgb(196, 85, 0);
+  text-decoration-line: underline;
+}
+
+.form_last_wrap {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.arrows {
+  font-size: 16px;
+}
+
+.divider {
+  height: 30px;
+  width: 100%;
+  border-bottom:  solid 1px rgb(247, 247, 247);
+  box-shadow: 0 4px 6px -6px  #6a6868;
+}
+
+.last_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  display: flex;
+  justify-content:space-around;
+  margin-top: 25px;
+}
+
+.link {
+  font-size: 11px;
+  text-decoration: none;
+  color: rgb(0, 102, 192);
+  font-weight: 500;
+}
+
+.inc {
+  font-size: 11px;
+  margin-top: 15px;
+}
