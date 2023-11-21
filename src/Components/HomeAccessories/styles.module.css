@@ -1,0 +1,16 @@
+.contents {
+  height: 170px;
+  width: 49%;
+  /* border: solid 1px; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.middle_contents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-left: 30px; */
+}

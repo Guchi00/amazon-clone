@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: center;
+  height: 500px;  
+  /* border:  solid 1px; */
+  position: absolute;
+  top: 400px;
+  left: 96px;
+}
+
+.allcards {
+  height: 445px;
+  width: 350px;
+  border: solid 1px;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.allcards_first_diff_one {
+  height: 445px;
+  width: 350px;
+  border: solid 1px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 20px;
+}
+
+.see_more {
+  height: 50px;
+  width: 100px;
+  text-decoration: none;
+  margin-left: 20px;
+  color: rgb(2, 113, 133);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cards_title {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cards_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.cards_action {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 12px;
+  color: rgb(2, 113, 133);
+  font-weight: 600;
+}
+
+.image {
+  > img {
+    width: 318px;
+    height: 330px;
+  }
+}
