@@ -1,5 +1,7 @@
 import React from "react";
 import { Carousel } from "antd";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import styles from "./styles.module.css";
 
 export function FirstItems() {
@@ -9,15 +11,16 @@ export function FirstItems() {
   };
 
   return (
-    <div className={styles.component}>
+    <div className={styles.container}>
       <div className={styles.box_content}>
         <Carousel
         autoplay
-        dots={true} 
-        dotPosition="top"
+        arrows
+        prevArrow={<ArrowBackIosIcon />}
+        nextArrow={<ArrowForwardIosIcon />}
         effect="scrollx"
         pauseOnHover={true}
-        pauseOnDotsHover={true}
+        dots={false}
         >
           <div>
             <img src="https://www.groovypost.com/wp-content/uploads/2019/11/amazon-black-friday-1000x450.jpg" className={styles.image_contents} />

@@ -1,0 +1,233 @@
+/* For Actions */
+.user_signup_parent_div {
+  height: 130px;
+  width: 100%;
+  border: solid 1px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border: solid 1px #dddddd;
+} 
+
+.personalize_recon {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.signin_btn {
+  width: 250px;
+  height: 32px;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 13px;
+  background-color: rgb(255, 194, 43);
+  border: solid 1px rgb(230, 164, 2);
+  margin-top: 5px;
+}
+
+.new_customer {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.start_here {
+  font-size: 11px;
+  color:rgb(4, 112, 133);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.start_here:hover {
+  color: rgb(200, 80, 31);
+}
+
+.user_back_to_top {
+  height: 50px;
+  width: 100%;
+  border: solid 1px rgb(55, 72, 90);
+  background-color: rgb(55, 72, 90);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.back_to_top {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+/* For InformationItems */
+.data_box {
+  height: 300px;
+  width: 250px;
+  /* border: solid 1px; */
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.title {
+  font-weight: 800;
+  margin-bottom: 5px;
+  color:#fff;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.subtitle:hover {
+  text-decoration: underline;
+}
+
+
+  
+/* For Information */
+.parent {
+  height: 350px;
+  width: 100%;
+  /* border: solid 1px; */
+  background-color: rgb(34, 48, 62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* For ActionButtons */
+.actionbtns_parent {
+  height: 100px;
+  width: 100%;
+  border: solid 0.1px rgb(221, 221, 221);
+  border-bottom: none;
+  border-left: none;
+  background-color: rgb(34, 48, 62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amazon_img {
+  height: 22px;
+  width: 82px;
+  margin-right: 90px;
+  margin-top: 15px;
+}
+
+
+.p {
+  width: 220px;
+  /* height: 400px; */
+}
+
+.language_option {
+  height: 35px;
+  width: 125px;
+  cursor: pointer;
+  margin-left: 10px;
+  border: solid 0.1px rgb(221, 221, 221);
+  border-radius: 3px;
+  background-color: rgb(34, 48, 62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.globe_icon {
+  height: 15px!important;
+  color: #fff;
+}
+
+.en {
+  color: rgb(204, 204, 204);
+  font-weight: 600;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.arrow_up_icon {
+  color:  rgb(102, 102, 102);
+  font-size: 20px;
+}
+
+.change_language {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.learn_more {
+  font-size: 12px;
+  margin-left: 10px;
+  color:rgb(3, 69, 62)
+}
+
+.learn_more:hover {
+  color: rgb(199, 81, 31);
+  text-decoration-line: underline;
+}
+
+.input_button {
+  margin-top: 10px;
+  accent-color: rgb(240, 87, 5);
+}
+
+.language_labels {
+  font-weight: 500;
+}
+
+.content {
+  margin-top: 15px;
+  border-top: solid 1px rgb(238, 238, 238);
+}
+
+.dollar_btn {
+  height: 35px;
+  width: 150px;
+  cursor: pointer;
+  margin-left: 10px;
+  border: solid 0.1px rgb(221, 221, 221);
+  border-radius: 3px;
+  color: rgb(204, 204, 204);
+  font-size: 13px;
+  font-weight: 600;
+  background-color: rgb(34, 48, 62);
+}
+
+.united_state_btn {
+  height: 35px;
+  width: 140px;
+  cursor: pointer;
+  margin-left: 10px;
+  border: solid 0.1px rgb(221, 221, 221);
+  border-radius: 3px;
+  color: rgb(204, 204, 204);
+  font-size: 13px;
+  font-weight: 600;
+  background-color: rgb(34, 48, 62);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.us_flag {
+  width: 18px;
+  height: 11px;
+  margin-right:7px;
+}
+
+
+
+

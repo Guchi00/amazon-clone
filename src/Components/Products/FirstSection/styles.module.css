@@ -1,24 +1,27 @@
 /* I will later remove the height and border in the component,
 I just want to use it as a measure */
 
-.component {
+.container {
   display: flex;
   /* align-items: flex-end; */
   justify-content: center;
   /* height: 600px;   */
   
   /* position: relative; */
+  /* border: solid 1px  */
 }
 
 .box_content {
   width: 90%;
   height: 700px;
-  background-color: orange
+  background-color: rgb(243, 241, 238);
+  /* border: solid 1px  */
 }
 
 .image_contents {
   width: 100%;
-  height: 700px;
+  height: 400px;
   cursor: pointer;
+  /* border: solid 1px  */
 }
 

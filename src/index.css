@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
 }
 
 code {
@@ -20,4 +21,25 @@ code {
 .ant-modal-header,
 .ant-modal-body {
   padding: 10px 15px;
+}
+
+/* antd carousel arrows */
+.ant-carousel .slick-prev,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-prev:focus {
+  font-size: inherit;
+  top: 200px;
+  left: 10px;
+  z-index: 2;
+  color: white;
+}
+
+.ant-carousel .slick-next,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-next:focus {
+  font-size: inherit;
+  top: 200px;
+  right: 10px;
+  z-index: 2;
+  color: white;
 }

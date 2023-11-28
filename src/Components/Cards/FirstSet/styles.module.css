@@ -1,26 +1,8 @@
-.container {
-  display: flex;
-  /* align-items: flex-end; */
-  justify-content: center;
-  height: 500px;  
-  /* border:  solid 1px; */
-  position: absolute;
-  top: 400px;
-  left: 96px;
-}
-
-.allcards {
-  height: 445px;
-  width: 350px;
-  border: solid 1px;
-  background-color: #fff;
-  margin: 10px;
-}
-
+/* This is for the first card. GameAccessoriesCard */
 .allcards_first_diff_one {
   height: 445px;
   width: 350px;
-  border: solid 1px;
+  /* border: solid 1px; */
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -34,6 +16,11 @@
   margin: 20px;
 }
 
+.gaming_subTitle_props {
+  text-decoration: none;
+  color: black;
+}
+
 .see_more {
   height: 50px;
   width: 100px;
@@ -42,6 +29,15 @@
   color: rgb(2, 113, 133);
   font-size: 13px;
   font-weight: 500;
+}
+
+/* This is for the other three remaining card. OtherCardsItems*/
+.allcards {
+  height: 445px;
+  width: 350px;
+  /* border: solid 1px; */
+  background-color: #fff;
+  margin: 10px;
 }
 
 .cards_title {
@@ -72,3 +68,22 @@
     height: 330px;
   }
 }
+
+
+/*And this is for the GameAccessoriesCard and the OtherCardItems Container/Parent. OtherCards*/ 
+.parent {
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: center;
+  height: 460px;  
+  /* border:  solid 1px; */
+  position: absolute;
+  top: 400px;
+  left: 100px;
+}
+
+.action_link_props {
+  text-decoration: none;
+  color: rgb(4, 112, 133);
+}
+
