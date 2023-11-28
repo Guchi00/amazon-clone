@@ -7,10 +7,16 @@
   flex-direction: column;
 }
 
-.middle_contents {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* margin-left: 30px; */
+.image {
+  > img {
+    width: 75%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.subTitle {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }

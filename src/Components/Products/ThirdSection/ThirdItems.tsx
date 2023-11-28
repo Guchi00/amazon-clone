@@ -1,12 +1,12 @@
 import React from 'react';
-import { HomeAccessoriesCard } from '../../Cards/SecondSet/HomeAccessoriesCard'
+import { ThreeCards } from '../../Cards/SecondSet/ThreeCards';
 
 export function ThirdItems() {
   
 
   return (
     <>
-      <HomeAccessoriesCard />
+      <ThreeCards />
     </>
   )
 }

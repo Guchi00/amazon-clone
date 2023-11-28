@@ -1,28 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
-import { Gaming } from "../../GamingAccessoriesCard/Gaming";
+import { Gaming } from "../../GamingAccessories/Gaming";
 
-const data: { imageUrl: string; title: string }[] = [
+const data: { imageUrl: string; subTitleUrl: string, subTitle: string }[] = [
   {
     imageUrl:
       "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_UF894,1000_QL80_.jpg",
-    title: "Headsets",
+    subTitleUrl: "/headSets",
+    subTitle: "Headset"
   },
   {
     imageUrl:
       "https://m.media-amazon.com/images/I/71eWnvYKN3L._AC_UF894,1000_QL80_.jpg",
-    title: "Keyboards",
+      subTitleUrl: "/keyboards",
+    subTitle: "Keyboard"
   },
   {
     imageUrl:
       "https://m.media-amazon.com/images/I/71wc9isMnlL._AC_UF894,1000_QL80_.jpg",
-    title: "Computer Mice",
+      subTitleUrl: "/computerMice",
+    subTitle: "Computer Mice"
   },
   {
     imageUrl:
       "https://ii2.pepperfry.com/media/catalog/product/t/y/800x880/tycoon-high-back-office-chair-in-black-colour-by-nilkamal-tycoon-high-back-office-chair-in-black-col-qyv0vp.jpg",
-    title: "Chairs",
+      subTitleUrl: "/chairs",
+    subTitle: "Chairs"
   },
 ];
 
@@ -34,9 +38,9 @@ export function GameAccessoriesCard() {
         <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center", marginLeft: "30px"}} >
           {data.map((items) => (
             <Gaming
-              key={items.title}
+              key={items.subTitle}
               image={<img src={items.imageUrl} alt={"images"} />}
-              title={items.title}
+              subTitle={<Link className={styles.gaming_subTitle_props} to={items.subTitleUrl}>{items.subTitle}</Link>}
             />
           ))}
         </div>
