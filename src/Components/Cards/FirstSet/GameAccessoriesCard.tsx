@@ -44,7 +44,7 @@ export function GameAccessoriesCard() {
             />
           ))}
         </div>
-        <Link to="" className={styles.see_more}>
+        <Link to="/games" className={styles.see_more}>
           See more
         </Link>
       </div>
