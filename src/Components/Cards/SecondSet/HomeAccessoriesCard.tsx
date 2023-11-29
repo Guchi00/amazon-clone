@@ -48,7 +48,7 @@ export function HomeAccessoriesCard() {
             />
           ))}
         </div>
-        <Link to="" className={styles.see_more}>
+        <Link to="/" className={styles.see_more}>
           See more
         </Link>
       </div>

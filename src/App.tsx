@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import './App.css';
 import { NavBar } from './Components/Navigation/NavBar';
 import { Signin, Register, Home } from './Pages';
+import { GamesEssentials } from './Pages/Gamers/GamesEssentials';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Signin />} />
+          <Route path="/games" element={<GamesEssentials />} />
           <Route path="*" element={<>404</>} />
       </Routes>
     </BrowserRouter>
