@@ -1,0 +1,63 @@
+/* For headseats */
+.holder {
+  height: 270px;
+  width: 80%;
+  /* border: solid 1px; */
+  display: flex;
+  background-color: rgb(247, 247, 247);
+  margin-top: 15px;
+}
+
+.image_container {
+  height: 270px;
+  width: 20%;
+  border: solid 1px rgb(247, 247, 247);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #fff;
+  > img {
+    height: 220px;
+    width: 160px;
+  }
+}
+
+.other_items_holder {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item_title {
+  width: 75%;
+}
+
+.link_to_addto_cart {
+  color: black;
+  font-weight: 500;
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
+}
+
+.link_to_addto_cart:hover {
+  color: rgb(199, 81, 31);
+}
+
+.cost {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(3, 69, 62);
+  margin-top: 100px;
+}
+
+.action {
+  height: 30px;
+  width: 120px;
+  background-color: rgb(199, 81, 31);
+  border: solid 1px rgb(199, 81, 31);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}

@@ -1,21 +1,32 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
-import './App.css';
-import { NavBar } from './Components/Navigation/NavBar';
-import { Signin, Register, Home } from './Pages';
-import { GamesEssentials } from './Pages/Gamers/GamesEssentials';
+import "./App.css";
+import {
+  Signin,
+  Register,
+  Home,
+  GamesEssentials,
+  Headsets,
+  Chairs,
+  ComputersMices,
+  Keyboards,
+} from "./Pages";
 
 const App = () => {
   return (
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Signin />} />
-          <Route path="/games" element={<GamesEssentials />} />
-          <Route path="*" element={<>404</>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Signin />} />
+        <Route path="/games" element={<GamesEssentials />} />
+        <Route path="/headsets" element={<Headsets />} />
+        <Route path="/chairs" element={<Chairs />} />
+        <Route path="/mices" element={<ComputersMices />} />
+        <Route path="/keyboards" element={<Keyboards />} />
+        <Route path="*" element={<>404</>} />
       </Routes>
     </BrowserRouter>
   );
-}
+};
 export default App;
