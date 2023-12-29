@@ -1,49 +1,34 @@
-import React from 'react';
+import React from "react";
+import { ProductViewReusable } from "../../Components/Reusables/ProductView/ProductViewReusable";
+import { Actions, AboutAmazon, ActionButtons } from "../../Components/Footer";
+import headsets from "../../Data/headsets.json";
+import styles from "./styles.module.css";
 
-const data = [
-  {
-    imagesUrl: "https://m.media-amazon.com/images/I/615XO7VlPLL._AC_UF894,1000_QL80_.jpg",
-    imageTitles: "Steel Series",
-    cost: "$142",
-    action: "Add to Cart",
-    numberOfProd: "",
-  },
-  {
-    imagesUrl: "https://m.media-amazon.com/images/I/61eFyV4WLLL._AC_UF894,1000_QL80_.jpg",
-    imageTitles: "Skull Candy",
-    cost: "$99",
-    action: "Add to Cart",
-    numberOfProd: "",
-  },
-  {
-    imagesUrl: "https://m.media-amazon.com/images/I/61otYZ1ZA9L._AC_UF894,1000_QL80_.jpg",
-    imageTitles: "Steel Series New Arctis",
-    cost: "$59",
-    action: "Add to Cart",
-    numberOfProd: "",
-  },
-  {
-    imagesUrl: "https://m.media-amazon.com/images/I/71-+0U8z-ZL._AC_UF894,1000_QL80_.jpg",
-    imageTitles: "Corsair HS65 SURROUND",
-    cost: "$39",
-    action: "Add to Cart",
-    numberOfProd: "",
-  },
-  {
-    imagesUrl: "https://m.media-amazon.com/images/I/61exUSWiSoL._AC_UF894,1000_QL80_.jpg",
-    imageTitles: "Razer BlackShark V2 Pro",
-    cost: "$198",
-    action: "Add to Cart",
-    numberOfProd: "",
-  },
-]
+console.log(Array.isArray(headsets), "mmmmm");
 
 export function Headsets() {
-  
-
   return (
     <>
-      {/* <GamesEssential /> */}
+      <div className={styles.headset_container}>
+        <span className={styles.headset_title}>Gaming Headsets</span>
+        {headsets.map((items: any) => (
+          <ProductViewReusable
+            key={items.id}
+            id={items.id}
+            image={<img src={items.imageUrl} alt={"images"} />}
+            title={items.title}
+            cost={items.cost}
+            action={items.action}
+            // plus={items.add}
+            // minus={items.minus}
+            // delete={items.delete}
+          />
+        ))}
+      </div>
+      {/* <div style={{ height: "100px", width: "80%" }}></div> */}
+      <Actions />
+      <AboutAmazon />
+      <ActionButtons />
     </>
-  )
+  );
 }

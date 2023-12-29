@@ -1,29 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 
-interface INewGamesEssentials {
+interface INewProductSeeMoreReusable {
   image: React.ReactNode;
-  imageTitles: React.ReactNode;
-  cost: string;
-  action: React.ReactNode;
-  numberOfProd?: React.ReactNode;
+  title: string;
 }
 
-export function ProductSeeMoreReusable(props: INewGamesEssentials) {
-  const { image, imageTitles, cost, action, numberOfProd } = props;
+export function ProductSeeMoreReusable(props: INewProductSeeMoreReusable) {
+  const { image, title } = props;
 
   return (
     <>
       <div className={styles.products_parent}>
-        <div className={styles.images}>{image}</div>
+        <Link to="" className={styles.images}>
+          {image}
+        </Link>
         <div className={styles.sub_parent}>
-          <span className={styles.image_title}>{imageTitles}</span>
-          <span className={styles.prod_cost}>{cost}</span>
-
-          <div>
-            <button className={styles.action}>{action}</button>
-            <button>{numberOfProd}</button>
-          </div>
+          <Link to="" className={styles.title}>
+            {title}
+          </Link>
         </div>
       </div>
     </>

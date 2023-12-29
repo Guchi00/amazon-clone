@@ -3,13 +3,13 @@
   height: 130px;
   width: 100%;
   border: solid 1px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #fff;
   border: solid 1px #dddddd;
-} 
+}
 
 .personalize_recon {
   font-size: 13px;
@@ -35,7 +35,7 @@
 
 .start_here {
   font-size: 11px;
-  color:rgb(4, 112, 133);
+  color: rgb(4, 112, 133);
   font-weight: 500;
   text-decoration: none;
 }
@@ -53,31 +53,28 @@
   align-items: center;
   justify-content: center;
 }
-  
+
 .back_to_top {
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
 }
-
-
 
 /* For InformationItems */
 .data_box {
-  height: 300px;
-  width: 250px;
+  height: 350px;
+  width: 300px;
   /* border: solid 1px; */
-  margin-left: 20px;
+  margin-left: 30px;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
 
 .title {
   font-weight: 800;
   margin-bottom: 5px;
-  color:#fff;
+  color: #fff;
 }
 
 .subtitle {
@@ -92,20 +89,16 @@
   text-decoration: underline;
 }
 
-
-  
 /* For Information */
 .parent {
-  height: 350px;
+  height: 400px;
   width: 100%;
   /* border: solid 1px; */
   background-color: rgb(34, 48, 62);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
-
-
 
 /* For ActionButtons */
 .actionbtns_parent {
@@ -127,7 +120,6 @@
   margin-top: 15px;
 }
 
-
 .p {
   width: 220px;
   /* height: 400px; */
@@ -147,7 +139,7 @@
 }
 
 .globe_icon {
-  height: 15px!important;
+  height: 15px !important;
   color: #fff;
 }
 
@@ -159,7 +151,7 @@
 }
 
 .arrow_up_icon {
-  color:  rgb(102, 102, 102);
+  color: rgb(102, 102, 102);
   font-size: 20px;
 }
 
@@ -171,7 +163,7 @@
 .learn_more {
   font-size: 12px;
   margin-left: 10px;
-  color:rgb(3, 69, 62)
+  color: rgb(3, 69, 62);
 }
 
 .learn_more:hover {
@@ -225,9 +217,5 @@
 .us_flag {
   width: 18px;
   height: 11px;
-  margin-right:7px;
+  margin-right: 7px;
 }
-
-
-
-
