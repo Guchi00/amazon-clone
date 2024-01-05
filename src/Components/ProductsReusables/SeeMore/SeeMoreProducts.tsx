@@ -7,7 +7,7 @@ interface INewProductSeeMoreReusable {
   title: string;
 }
 
-export function ProductSeeMoreReusable(props: INewProductSeeMoreReusable) {
+export function SeeMoreProducts(props: INewProductSeeMoreReusable) {
   const { image, title } = props;
 
   return (

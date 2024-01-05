@@ -10,6 +10,7 @@ import {
   Chairs,
   ComputersMices,
   Keyboards,
+  Cart,
 } from "./Pages";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/chairs" element={<Chairs />} />
         <Route path="/mices" element={<ComputersMices />} />
         <Route path="/keyboards" element={<Keyboards />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<>404</>} />
       </Routes>
     </BrowserRouter>

@@ -1,5 +1,5 @@
 .first_nav {
-  background-color: rgb(35, 31, 32);
+  background-color: rgb(19, 25, 33);
   height: 60px;
   width: 100%;
   display: flex;
@@ -8,7 +8,7 @@
 .second_nav {
   background-color: rgb(34, 48, 62);
   height: 40px;
-  width: 100%
+  width: 100%;
 }
 
 .amazon_logo {
