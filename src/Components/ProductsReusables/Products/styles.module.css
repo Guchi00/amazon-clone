@@ -31,16 +31,11 @@
 
 .item_title {
   width: 75%;
-}
-
-.link_to_addto_cart {
-  color: black;
   font-weight: 500;
   font-family: "poppins", sans-serif;
-  text-decoration: none;
 }
 
-.link_to_addto_cart:hover {
+.item_title:hover {
   color: rgb(199, 81, 31);
 }
 

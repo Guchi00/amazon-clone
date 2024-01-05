@@ -1,0 +1,43 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 48px;
+  width: 80px;
+  border-radius: 3px;
+  margin-top: 5px;
+  border: solid 1px rgb(19, 25, 33);
+  background-color: rgb(19, 25, 33);
+  cursor: pointer;
+}
+
+.parent:hover {
+  border: solid 1px #fff;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.shopping_cart {
+  font-size: 30px;
+}
+
+.number_of_items {
+  font-size: 14px;
+  font-weight: 800;
+  color: rgb(240, 136, 5);
+  margin-bottom: -5px;
+}
+
+.right {
+  display: flex;
+  margin-top: 5px;
+}
+
+.cart_text {
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 15px;
+}
