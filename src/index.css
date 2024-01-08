@@ -17,6 +17,10 @@ code {
   padding: 0;
 }
 
+.my-app-nav + div {
+  padding-top: 90px !important;
+}
+
 .ant-modal-content {
   padding: 0px !important;
 }

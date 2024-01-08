@@ -15,7 +15,7 @@ export interface INewQuantifierProps {
 }
 
 export const Quantifier = (props: INewQuantifierProps) => {
-  const { removeProductCallback, handleUpdateQuantity, productId } = props;
+  const { productId } = props;
 
   const [cart, setCart] = useLocalStorageState<INewCartsProps>("cart", {});
   const getQuantity = cart?.[productId].quantity ?? 1;

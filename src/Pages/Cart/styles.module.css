@@ -62,17 +62,34 @@
 
 .middle_contents {
   height: 170px;
-  width: 67%;
+  width: 60%;
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  /* justify-content: center; */
-  /* border: solid 1px; */
+  justify-content: space-between;
 }
 
 .title {
   font-weight: 600;
   font-family: "poppins", sans-serif;
   font-size: 16px;
+}
+
+.action {
+  display: flex;
+}
+
+.delete_cart {
+  margin-left: 20px;
+  margin-top: 10px;
+  color: rgb(2, 113, 133);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.delete_cart:hover {
+  text-decoration: underline;
 }
 
 .product_price {

@@ -1,4 +1,5 @@
 import React from "react";
+import { message } from "antd";
 import useLocalStorageState from "use-local-storage-state";
 import { Link } from "react-router-dom";
 import { FormateCurrency } from "../../../Utilities/FormateCurrency";
@@ -23,11 +24,27 @@ export function Product(props: ProductProps) {
   const [cart, setCart] = useLocalStorageState<INewCartsProps>("cart", {});
 
   const addToCart = (product: ProductProps): void => {
-    setCart((prevCart) => ({
-      ...prevCart,
-      [product.id]: { ...product, quantity: 1 },
-    }));
+    if (cart?.hasOwnProperty(product.id)) {
+      const existingProduct = cart[product.id];
+      const updatedExistingProduct = {
+        ...existingProduct,
+        quantity: (existingProduct.quantity as number) + 1,
+      };
+      setCart((prevCart) => ({
+        ...prevCart,
+        [product.id]: updatedExistingProduct,
+      }));
+    } else {
+      setCart((prevCart) => ({
+        ...prevCart,
+        [product.id]: { ...product, quantity: 1 },
+      }));
+    }
+    message.success("product is added successful, proceed to the chart");
   };
+
+  //check if product id existin the cart, key if it does, update
+  //quantity and if not just add 1.
 
   return (
     <>
@@ -47,3 +64,9 @@ export function Product(props: ProductProps) {
     </>
   );
 }
+
+//  const existingProductId = product.id;
+//   if(Object.keys(cart?[product.id]).includes)
+//   if (Object.keys(cart?[product.id].includes(product.id))) {
+
+//   }
