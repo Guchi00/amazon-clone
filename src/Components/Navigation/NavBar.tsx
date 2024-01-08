@@ -24,7 +24,7 @@ export const NavBar: React.FunctionComponent = () => {
   }, [cart]);
 
   return (
-    <div>
+    <div className={`${styles.parent} my-app-nav`}>
       <div className={styles.first_nav}>
         <div className={styles.parent_amazon_logo}>
           <img

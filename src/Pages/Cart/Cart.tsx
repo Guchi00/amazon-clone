@@ -60,6 +60,21 @@ export function Cart() {
 
   console.log(totalPrice, "total ss.....");
 
+  const productsCount = useMemo(() => {
+    return Object.values(cart || {}).reduce(
+      (accumulator, product) => (accumulator += product.quantity as number),
+      0
+    );
+  }, [cart]);
+
+  const handleDeleteProduct = (productId: number) => {
+    const existing = cart?.[productId];
+    if (existing) {
+      delete cart?.[productId];
+      setCart({ ...cart });
+    }
+  };
+
   return (
     <>
       <NavBar />
@@ -81,14 +96,23 @@ export function Cart() {
 
                 <div className={styles.middle_contents}>
                   <span className={styles.title}>{product.title}</span>
-                  <Quantifier
-                    removeProductCallback={() =>
-                      handleRemoveProduct(product.id)
-                    }
-                    handleUpdateQuantity={handleUpdateQuantity}
-                    productId={product.id}
-                  />
+                  <div className={styles.action}>
+                    <Quantifier
+                      removeProductCallback={() =>
+                        handleRemoveProduct(product.id)
+                      }
+                      handleUpdateQuantity={handleUpdateQuantity}
+                      productId={product.id}
+                    />
+                    <span
+                      className={styles.delete_cart}
+                      onClick={() => handleDeleteProduct(product.id)}
+                    >
+                      Delete
+                    </span>
+                  </div>
                 </div>
+
                 <span className={styles.product_price}>
                   {FormateCurrency(product.cost)}
                 </span>
@@ -96,7 +120,7 @@ export function Cart() {
             ))}
 
             <div className={styles.sub_total}>
-              <TotalPrice amount={totalPrice} />
+              <TotalPrice amount={totalPrice} productsCount={productsCount} />
             </div>
           </div>
 
