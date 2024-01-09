@@ -40,7 +40,7 @@ export function Product(props: ProductProps) {
         [product.id]: { ...product, quantity: 1 },
       }));
     }
-    message.success("product is added successful, proceed to the chart");
+    message.success("item added to cart");
   };
 
   //check if product id existin the cart, key if it does, update
@@ -64,9 +64,3 @@ export function Product(props: ProductProps) {
     </>
   );
 }
-
-//  const existingProductId = product.id;
-//   if(Object.keys(cart?[product.id]).includes)
-//   if (Object.keys(cart?[product.id].includes(product.id))) {
-
-//   }

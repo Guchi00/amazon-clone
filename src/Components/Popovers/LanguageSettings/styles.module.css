@@ -11,7 +11,7 @@
   margin-top: 5px;
 }
 
-.language_option:hover{
+.language_option:hover {
   border: solid 1px white;
   border-radius: 3px;
 }
@@ -38,7 +38,7 @@
 .learn_more {
   font-size: 12px;
   margin-left: 10px;
-  color:rgb(3, 69, 62)
+  color: rgb(3, 69, 62);
 }
 
 .learn_more:hover {
@@ -87,7 +87,7 @@
 .change {
   font-size: 12px;
   margin-left: 10px;
-  color:rgb(3, 69, 62);
+  color: rgb(3, 69, 62);
   margin-left: 40px;
 }
 
@@ -121,5 +121,5 @@
 
 .region:hover {
   text-decoration: underline;
-  text-decoration-color:rgb(199, 81, 31);
+  text-decoration-color: rgb(199, 81, 31);
 }
