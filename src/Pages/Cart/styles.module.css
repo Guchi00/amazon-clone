@@ -107,7 +107,7 @@
   justify-content: flex-end;
   margin-right: 40px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .divider {
@@ -134,12 +134,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.checkout_subtotal {
-  margin-top: 30px;
+  justify-content: center;
+  font-weight: 500;
   font-size: 18px;
 }
+
+/* .checkout_subtotal {
+  margin-top: 30px;
+  font-size: 18px;
+} */
 
 .checkout_btn {
   height: 30px;
@@ -151,4 +154,5 @@
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
+  margin-bottom: 20px;
 }

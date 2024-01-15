@@ -2,7 +2,7 @@ import { FormateCurrency } from "../../Utilities/FormateCurrency";
 
 export interface INewTotalPriceProps {
   amount: number;
-  productsCount: number;
+  productsCount?: number;
 }
 
 export const TotalPrice = (props: INewTotalPriceProps) => {
@@ -10,7 +10,8 @@ export const TotalPrice = (props: INewTotalPriceProps) => {
   return (
     <>
       <div>
-        Subtotal ({productsCount} items):{FormateCurrency(amount)}
+        Subtotal ({productsCount} items):
+        <span style={{ fontWeight: "700" }}>{FormateCurrency(amount)}</span>
       </div>
     </>
   );
