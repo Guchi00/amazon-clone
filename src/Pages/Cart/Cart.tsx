@@ -1,6 +1,13 @@
 import useLocalStorageState from "use-local-storage-state";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 import { NavBar } from "../../Components/Navigation/NavBar";
-import { INewCartsProps } from "../../Components/ProductsReusables/Products/Product";
+import {
+  INewCartsProps,
+  ProductProps,
+} from "../../Components/ProductsReusables/Products/Product";
 import { Quantifier, Operation } from "../../Components/Quantifier/Quantifier";
 import { FormateCurrency } from "../../Utilities/FormateCurrency";
 import { Actions, AboutAmazon, ActionButtons } from "../../Components/Footer";
@@ -9,8 +16,11 @@ import styles from "./styles.module.css";
 import { TotalPrice } from "../../Components/TotalPrice/TotalPrice";
 import { useMemo } from "react";
 
-export function Cart() {
+export function Cart(props: INewCartsProps) {
+  const navigate = useNavigate();
   const [cart, setCart] = useLocalStorageState<INewCartsProps>("cart", {});
+
+  const getProducts = () => Object.values(cart || {});
 
   const handleRemoveProduct = (productId: number): void => {
     setCart((prevCart) => {
@@ -19,6 +29,15 @@ export function Cart() {
       return updateCart;
     });
   };
+
+  const handleCheckout = (product: ProductProps) => {
+    navigate("/checkout");
+  };
+
+  // const viewOrder = (id: String) => {
+  //   const user = users.find((user) => user.id === id);
+  //   setUsers(user);
+  // };
 
   const handleUpdateQuantity = (productId: number, operation: Operation) => {
     setCart((prevCart) => {
@@ -40,15 +59,7 @@ export function Cart() {
     });
   };
 
-  const getProducts = () => Object.values(cart || {});
-
-  console.log(cart, "cart");
-
-  // const totalPrice = getProducts().reduce(
-  //   (accumulator, product) =>
-  //     accumulator + product.cost * (product?.quantity as number),
-  //   0
-  // );
+  // const getProducts = () => Object.values(cart || {});
 
   const totalPrice = useMemo(() => {
     return Object.values(cart || {}).reduce(
@@ -57,6 +68,8 @@ export function Cart() {
       0
     );
   }, [cart]);
+
+  console.log(cart, "cartttttt");
 
   console.log(totalPrice, "total ss.....");
 
@@ -74,6 +87,12 @@ export function Cart() {
       setCart({ ...cart });
     }
   };
+
+  // const viewModal = (id: string) => {
+  //   const product = products.find((product) => product.id === id);
+  //   setProduct(product);
+  //   toggleViewModal;
+  // };
 
   return (
     <>
@@ -136,12 +155,18 @@ export function Cart() {
 
         <div className={styles.right}>
           <div className={styles.checkout}>
-            <span className={styles.checkout_subtotal}>Subtotal</span>
-            <button className={styles.checkout_btn}>Proceed to checkout</button>
+            <TotalPrice amount={totalPrice} />
+            <Link to={`/cart/${props?.id}../../../checkout`}>
+              <button
+                className={styles.checkout_btn}
+                onClick={() => handleCheckout}
+              >
+                Proceed to checkout
+              </button>
+            </Link>
           </div>
         </div>
       </div>
-
       <Actions />
       <AboutAmazon />
       <ActionButtons />
