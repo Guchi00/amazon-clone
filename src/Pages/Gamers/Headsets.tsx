@@ -5,8 +5,6 @@ import { Actions, AboutAmazon, ActionButtons } from "../../Components/Footer";
 import headsets from "../../Data/headsets.json";
 import styles from "./styles.module.css";
 
-console.log(Array.isArray(headsets), "mmmmm");
-
 export function Headsets() {
   return (
     <>

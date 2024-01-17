@@ -14,7 +14,7 @@ import styles from "./styles.module.css";
 export const NavBar: React.FunctionComponent = () => {
   const [cart] = useLocalStorageState<INewCartsProps>("cart", {});
 
-  console.log(cart, "cart >>>>");
+  // console.log(cart, "cart >>>>");
 
   const productsCount = useMemo(() => {
     return Object.values(cart || {}).reduce(

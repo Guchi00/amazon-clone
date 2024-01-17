@@ -2,6 +2,7 @@ import useLocalStorageState from "use-local-storage-state";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { message } from "antd";
 
 import { NavBar } from "../../Components/Navigation/NavBar";
 import {
@@ -30,15 +31,6 @@ export function Cart(props: INewCartsProps) {
     });
   };
 
-  const handleCheckout = (product: ProductProps) => {
-    navigate("/checkout");
-  };
-
-  // const viewOrder = (id: String) => {
-  //   const user = users.find((user) => user.id === id);
-  //   setUsers(user);
-  // };
-
   const handleUpdateQuantity = (productId: number, operation: Operation) => {
     setCart((prevCart) => {
       const updatedCart = { ...prevCart };
@@ -59,8 +51,6 @@ export function Cart(props: INewCartsProps) {
     });
   };
 
-  // const getProducts = () => Object.values(cart || {});
-
   const totalPrice = useMemo(() => {
     return Object.values(cart || {}).reduce(
       (accumulator, product) =>
@@ -68,10 +58,6 @@ export function Cart(props: INewCartsProps) {
       0
     );
   }, [cart]);
-
-  console.log(cart, "cartttttt");
-
-  console.log(totalPrice, "total ss.....");
 
   const productsCount = useMemo(() => {
     return Object.values(cart || {}).reduce(
@@ -88,11 +74,16 @@ export function Cart(props: INewCartsProps) {
     }
   };
 
-  // const viewModal = (id: string) => {
-  //   const product = products.find((product) => product.id === id);
-  //   setProduct(product);
-  //   toggleViewModal;
-  // };
+  const handleCheckout = () => {
+    const getValues = Object.keys(cart || {});
+    if (getValues.length === 0) {
+      message.error(
+        "Your cart is empty! Please add item before you proceed to checkout"
+      );
+    } else {
+      navigate("/checkout");
+    }
+  };
 
   return (
     <>
@@ -156,14 +147,9 @@ export function Cart(props: INewCartsProps) {
         <div className={styles.right}>
           <div className={styles.checkout}>
             <TotalPrice amount={totalPrice} />
-            <Link to={`/cart/${props?.id}../../../checkout`}>
-              <button
-                className={styles.checkout_btn}
-                onClick={() => handleCheckout}
-              >
-                Proceed to checkout
-              </button>
-            </Link>
+            <button className={styles.checkout_btn} onClick={handleCheckout}>
+              Proceed to checkout
+            </button>
           </div>
         </div>
       </div>
