@@ -14,6 +14,9 @@
   border: solid 1px white;
   border-radius: 3px;
 }
+.login_link {
+  text-decoration: none;
+}
 
 .hello_signin {
   font-size: 12px;

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 
 export interface INewGamingAccessories {
@@ -13,9 +12,7 @@ export function Gaming(props: INewGamingAccessories) {
   return (
     <>
       <div className={styles.contents}>
-        <Link to="" className={styles.image}>
-          {image}
-        </Link>
+        <div className={styles.image}>{image}</div>
         <span className={styles.subTitle}>{subTitle}</span>
       </div>
     </>

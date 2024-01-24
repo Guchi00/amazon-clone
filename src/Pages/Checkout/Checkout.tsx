@@ -70,7 +70,7 @@ export const Checkout = (props: INewCartsProps) => {
     }
   };
 
-  const handleChage = (event: ChangeEvent<HTMLInputElement>): void => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
     setUserInfor((userInfor) => ({
       ...userInfor,
       [event.target.name]: event.target.value,
@@ -127,7 +127,7 @@ export const Checkout = (props: INewCartsProps) => {
                   type="text"
                   name="fullName"
                   className={styles.input}
-                  onChange={handleChage}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -138,7 +138,7 @@ export const Checkout = (props: INewCartsProps) => {
                   type="text"
                   name="email"
                   className={styles.input}
-                  onChange={handleChage}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -149,7 +149,7 @@ export const Checkout = (props: INewCartsProps) => {
                   type="text"
                   name="address"
                   className={styles.input}
-                  onChange={handleChage}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -164,7 +164,7 @@ export const Checkout = (props: INewCartsProps) => {
                     placeholder="XXXX XXXX XXXX XXXX"
                     type="text"
                     name="cardInformation"
-                    onChange={handleChage}
+                    onChange={handleChange}
                     className={styles.input_card_information}
                   />
                   <div className={styles.last_inputs_div}>
@@ -172,14 +172,14 @@ export const Checkout = (props: INewCartsProps) => {
                       placeholder="10/24"
                       type="text"
                       name="cardInformation"
-                      onChange={handleChage}
+                      onChange={handleChange}
                       className={styles.last_inputs}
                     />
                     <input
                       placeholder="242"
                       type="text"
                       name="cardInformation"
-                      onChange={handleChage}
+                      onChange={handleChange}
                       className={styles.last_inputs}
                     />
                   </div>
