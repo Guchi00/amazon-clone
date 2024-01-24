@@ -2,9 +2,9 @@ import React, { useMemo } from "react";
 import useLocalStorageState from "use-local-storage-state";
 import { AddressButton } from "../Location/AddressButton";
 import { AmazonSearch } from "../Filter/AmazonSearch";
-import { ProductsDropdownMenu } from "../Filter/ProductsDropdownMenu";
-import { LanguagePopover } from "../Popovers/LanguageSettings/LanguagePopover";
-import { AccountsPopover } from "../Popovers/Accounts/AccountsPopover";
+import { ProductsMenu } from "../Filter/ProductsMenu";
+import { Language } from "../Popovers/LanguageSettings/Language";
+import { Accounts } from "../Popovers/Accounts/Accounts";
 import { ReturnsAndOrder } from "../Orders/ReturnsAndOrder";
 import { CartWidget } from "../CartWidget/CartWidget";
 import { INewCartsProps } from "../ProductsReusables/Products/Product";
@@ -34,10 +34,10 @@ export const NavBar: React.FunctionComponent = () => {
           />
         </div>
         <AddressButton />
-        <ProductsDropdownMenu />
+        <ProductsMenu />
         <AmazonSearch />
-        <LanguagePopover />
-        <AccountsPopover />
+        <Language />
+        <Accounts />
         <ReturnsAndOrder />
         <CartWidget productsCount={productsCount} />
       </div>

@@ -21,6 +21,8 @@ export function Cart(props: INewCartsProps) {
   const navigate = useNavigate();
   const [cart, setCart] = useLocalStorageState<INewCartsProps>("cart", {});
 
+  console.log(cart, "cart");
+
   const getProducts = () => Object.values(cart || {});
 
   const handleRemoveProduct = (productId: number): void => {
@@ -75,7 +77,7 @@ export function Cart(props: INewCartsProps) {
   };
 
   const handleCheckout = () => {
-    const getValues = Object.keys(cart || {});
+    const getValues = Object.values(cart || {});
     if (getValues.length === 0) {
       message.error(
         "Your cart is empty! Please add item before you proceed to checkout"

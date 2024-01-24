@@ -21,11 +21,12 @@
   color: #666666;
 }
 
-.arrowdownIcon {
+.arrow_icon {
   font-size: 19px;
   color: #666666;
 }
 
+/* search styles */
 .showSearch {
   width: 940px;
   height: 40px;
@@ -40,4 +41,10 @@
 
 .showSearch .ant-select-selector:hover {
   border-color: rgb(254, 190, 104);
+}
+
+.container {
+  height: 70px;
+  width: 50%;
+  border: solid 1px;
 }

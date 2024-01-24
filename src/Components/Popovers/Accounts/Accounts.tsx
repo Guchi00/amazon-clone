@@ -5,27 +5,32 @@ import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined
 import styles from "./styles.module.css";
 
 const text = (
-<div className={styles.parent}>
-  <div>
-    <Link to="/login">
-    <button className={styles.signin_btn}>Sign in</button>
-    </Link>
+  <div className={styles.parent}>
+    <div>
+      <Link to="/login">
+        <button className={styles.signin_btn}>Sign in</button>
+      </Link>
+    </div>
+    <div className={styles.new}>
+      <span className={styles.new_customer}>New Customer? </span>
+      <Link to="/register" className={styles.start_here}>
+        Start here.
+      </Link>
+    </div>
   </div>
-  <div className={styles.new}>
-    <span className={styles.new_customer}>New Customer? </span>
-    <Link to="/register" className={styles.start_here} >Start here.</Link>
-  </div>
-</div>
-
 );
-
 
 const content = (
   <div className={styles.content}>
     <div className={styles.left_content}>
       <span className={styles.your_list}>Your Lists</span>
       <a className={styles.left_content_a}>Create a list</a>
-      <a className={styles.left_content_a} href="https://www.amazon.com/registries?ref_=nav_ListFlyout_find">Find a list or Registry</a>
+      <a
+        className={styles.left_content_a}
+        href="https://www.amazon.com/registries?ref_=nav_ListFlyout_find"
+      >
+        Find a list or Registry
+      </a>
     </div>
     <div className={styles.right_content}>
       <span className={styles.your_account}>Your Account</span>
@@ -44,9 +49,7 @@ const content = (
   </div>
 );
 
-
-
-export function AccountsPopover() {
+export function Accounts() {
   const [showArrow, setShowArrow] = React.useState(true);
   const [arrowAtCenter, setArrowAtCenter] = React.useState(false);
 
@@ -57,19 +60,20 @@ export function AccountsPopover() {
 
   return (
     <>
-    <Popover
-      placement="bottomLeft"
-      title={text}
-      content={content}
-      arrow={mergedArrow}
-    >
-      {/* <Link to="/login"> */}
-      <div className={styles.holder}>
-      <span className={styles.hello_signin}>Hello, Sign  in</span>
-        <span className={styles.account_and_list}>Account & List</span>
-        {/* <ArrowDropDownOutlinedIcon className={styles.arrowdownIcon} /> */}
-      </div>
-    </Popover>
+      <Popover
+        placement="bottomLeft"
+        title={text}
+        content={content}
+        arrow={mergedArrow}
+      >
+        <Link to="/login" className={styles.login_link}>
+          <div className={styles.holder}>
+            <span className={styles.hello_signin}>Hello, Sign in</span>
+            <span className={styles.account_and_list}>Account & List</span>
+            {/* <ArrowDropDownOutlinedIcon className={styles.arrowdownIcon} /> */}
+          </div>
+        </Link>
+      </Popover>
     </>
-  )
+  );
 }

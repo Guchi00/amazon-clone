@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 
-interface INewProductSeeMoreReusable {
+export interface INewProductSeeMoreReusable {
   image: React.ReactNode;
   title: string;
+  id: number;
 }
 
 export function SeeMoreProducts(props: INewProductSeeMoreReusable) {
@@ -13,11 +14,11 @@ export function SeeMoreProducts(props: INewProductSeeMoreReusable) {
   return (
     <>
       <div className={styles.products_parent}>
-        <Link to="" className={styles.images}>
+        <Link to={`/product/${props.id}`} className={styles.images}>
           {image}
         </Link>
         <div className={styles.sub_parent}>
-          <Link to="" className={styles.title}>
+          <Link to={`/product/${props.id}`} className={styles.title}>
             {title}
           </Link>
         </div>

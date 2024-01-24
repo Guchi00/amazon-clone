@@ -1,3 +1,7 @@
+.link_to_checkout {
+  text-decoration: none;
+}
+
 .parent {
   display: flex;
   flex-direction: column;
@@ -10,7 +14,7 @@
   margin-top: 5px;
 }
 
-.parent:hover  {
+.parent:hover {
   border: solid 1px #fff;
 }
 

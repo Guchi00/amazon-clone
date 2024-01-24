@@ -16,10 +16,22 @@
   margin: 20px;
 }
 
-.gaming_subTitle_props {
+.sub_title {
   text-decoration: none;
   color: black;
 }
+/* 
+.image {
+  width: 100px;
+  height: 250px;
+  border: solid 1px;
+
+  > img {
+    width: 75%;
+    height: auto;
+    object-fit: contain;
+  }
+} */
 
 .see_more {
   height: 50px;
@@ -69,13 +81,12 @@
   }
 }
 
-
-/*And this is for the GameAccessoriesCard and the OtherCardItems Container/Parent. OtherCards*/ 
+/*And this is for the GameAccessoriesCard and the OtherCardItems Container/Parent. OtherCards*/
 .parent {
   display: flex;
   /* align-items: flex-end; */
   justify-content: center;
-  height: 460px;  
+  height: 460px;
   /* border:  solid 1px; */
   position: absolute;
   top: 400px;
@@ -86,4 +97,3 @@
   text-decoration: none;
   color: rgb(4, 112, 133);
 }
-
