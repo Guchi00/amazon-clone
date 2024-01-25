@@ -3,12 +3,7 @@ import { Link } from "react-router-dom";
 import type { MenuProps } from "antd";
 import { Dropdown, Space } from "antd";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
-import data from "./data.json";
 import styles from "./styles.module.css";
-
-interface INewProductsProps {
-  data: typeof data;
-}
 
 const items: MenuProps["items"] = [
   {
