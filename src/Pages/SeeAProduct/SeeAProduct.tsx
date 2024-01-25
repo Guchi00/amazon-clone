@@ -17,13 +17,10 @@ export const SeeAProduct = () => {
   //The cart has the entire product props which is an object of product type
   const [cart, setCart] = useLocalStorageState<INewCartsProps>("cart", {});
 
-  console.log(cart, "cart >>>>>>");
-
   //use this ! or this as Product or this if (!product) return <>Product not found</>;
   const product = all.find((p) => p.id === Number(id));
 
   if (!product) return <>Product not found</>;
-  console.log(product, "products >>>");
 
   //check if product id exist in the cart key, if it does, update
   //quantity and if not just add 1.
