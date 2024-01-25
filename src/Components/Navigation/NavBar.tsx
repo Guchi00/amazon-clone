@@ -1,20 +1,19 @@
 import React, { useMemo } from "react";
 import useLocalStorageState from "use-local-storage-state";
 import { AddressButton } from "../Location/AddressButton";
-import { AmazonSearch } from "../Filter/AmazonSearch";
+import { SearchBar } from "../Filter/SearchBar";
 import { ProductsMenu } from "../Filter/ProductsMenu";
 import { Language } from "../Popovers/LanguageSettings/Language";
 import { Accounts } from "../Popovers/Accounts/Accounts";
 import { ReturnsAndOrder } from "../Orders/ReturnsAndOrder";
 import { CartWidget } from "../CartWidget/CartWidget";
 import { INewCartsProps } from "../ProductsReusables/Products/Product";
+import productData from "../../Data/all.json";
 
 import styles from "./styles.module.css";
 
 export const NavBar: React.FunctionComponent = () => {
   const [cart] = useLocalStorageState<INewCartsProps>("cart", {});
-
-  // console.log(cart, "cart >>>>");
 
   const productsCount = useMemo(() => {
     return Object.values(cart || {}).reduce(
@@ -35,7 +34,7 @@ export const NavBar: React.FunctionComponent = () => {
         </div>
         <AddressButton />
         <ProductsMenu />
-        <AmazonSearch />
+        <SearchBar placeholder="Search Amazon..." data={productData} />
         <Language />
         <Accounts />
         <ReturnsAndOrder />

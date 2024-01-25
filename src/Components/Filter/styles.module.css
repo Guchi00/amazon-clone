@@ -8,6 +8,7 @@
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   cursor: pointer;
+  border-right-color: rgb(205, 205, 205);
 }
 
 .space:hover {
@@ -26,25 +27,87 @@
   color: #666666;
 }
 
-/* search styles */
-.showSearch {
-  width: 940px;
-  height: 40px;
+/* SearchBar styles */
+.search_inputs {
+  display: flex;
+  border: 0;
   margin-top: 11px;
-  border-right: none;
-  border-top-left-radius: 5px;
 }
 
-.showSearch .ant-select-selector {
-  border-radius: 0px;
+.search input {
+  background-color: #fff;
+  /* border-radius: 2px; */
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 18px;
+  width: 870px;
+  border: 0;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.showSearch .ant-select-selector:hover {
-  border-color: rgb(254, 190, 104);
+.search_input:hover {
+  border: solid 1px rgb(254, 190, 106);
 }
 
-.container {
-  height: 70px;
-  width: 50%;
-  border: solid 1px;
+.search_icon {
+  height: 40px;
+  width: 50px;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  background-color: rgb(254, 190, 106);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.search_icon:hover {
+  background-color: rgb(240, 136, 6);
+}
+
+input:focus {
+  outline: none;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  /* font-family: "poppins", sans-serif; */
+}
+
+.search_icon svg {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.data_result {
+  /* margin-top: 5px; */
+  width: 928px;
+  height: 350px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-top: solid 1px rgb(187, 187, 187);
+}
+
+.data_result::-webkit-scrollbar {
+  display: none;
+}
+
+.data_result .data_item {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.data_item p {
+  margin-left: 10px;
+}
+
+.data_item:hover {
+  background-color: rgb(238, 238, 238);
 }

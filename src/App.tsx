@@ -14,8 +14,6 @@ import {
   Checkout,
   SeeAProduct,
 } from "./Pages";
-import { Search } from "./Components/Filter/Search";
-import { SearchAntd } from "./Components/Filter/SearchAntd";
 
 const App = () => {
   return (
@@ -32,8 +30,6 @@ const App = () => {
         <Route path="/product/:id" element={<SeeAProduct />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/searchantd" element={<SearchAntd />} />
         <Route path="*" element={<>404</>} />
       </Routes>
     </BrowserRouter>
