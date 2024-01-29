@@ -1,3 +1,4 @@
-export * from "./AboutAmazon";
-export * from "./ActionButtons";
-export * from "./Actions";
+export * from "./Account";
+export * from "./BackToTheTopPage";
+export * from "./AmazonInfo";
+export * from "./LanguageButtons";

@@ -5,3 +5,4 @@ export * from "../Components/Footer";
 export * from "./Cart";
 export * from "./Checkout";
 export * from "./SeeAProduct";
+export * from "./Pcs";

@@ -6,7 +6,12 @@ import { INewCartsProps } from "../../Components/ProductsReusables/Products/Prod
 import styles from "./styles.module.css";
 import useLocalStorageState from "use-local-storage-state";
 import { NavBar } from "../../Components/Navigation/NavBar";
-import { Actions, AboutAmazon, ActionButtons } from "../../Components/Footer";
+import {
+  Account,
+  AmazonInfo,
+  BackToTheTopPage,
+  LanguageButtons,
+} from "../../Components/Footer";
 import { TotalPrice } from "../../Components/TotalPrice/TotalPrice";
 import { FormateCurrency } from "../../Utilities/FormateCurrency";
 
@@ -197,9 +202,10 @@ export const Checkout = (props: INewCartsProps) => {
           </div>
         </div>
       </div>
-      <Actions />
-      <AboutAmazon />
-      <ActionButtons />
+      <Account />
+      <BackToTheTopPage />
+      <AmazonInfo />
+      <LanguageButtons />
     </div>
   );
 };

@@ -13,6 +13,7 @@ import {
   Cart,
   Checkout,
   SeeAProduct,
+  Pcs,
 } from "./Pages";
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/product/:id" element={<SeeAProduct />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/pcs" element={<Pcs />} />
         <Route path="*" element={<>404</>} />
       </Routes>
     </BrowserRouter>

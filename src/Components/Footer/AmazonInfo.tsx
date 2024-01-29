@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./styles.module.css";
-import { AboutAmazonItems } from "./AboutAmazonItems";
+import { AmazonInfoItems } from "./AmazonInfoItems";
 import { data } from "../../Data/AboutAmazon";
 
-export function AboutAmazon() {
+export const AmazonInfo = () => {
   return (
     <>
       <div className={styles.parent}>
         {data.map((items) => (
-          <AboutAmazonItems
+          <AmazonInfoItems
             key={items.title}
             title={items.title}
             subTitleOne={items.subTitleOne}
@@ -24,4 +24,4 @@ export function AboutAmazon() {
       </div>
     </>
   );
-}
+};

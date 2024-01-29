@@ -1,13 +1,16 @@
 import React from "react";
 import { SeeMoreProducts } from "../../Components/ProductsReusables/SeeMore/SeeMoreProducts";
 import { data } from "../../Data/GamesEssentialsData";
-import { Actions } from "../../Components/Footer/Actions";
-import { AboutAmazon } from "../../Components/Footer/AboutAmazon";
-import { ActionButtons } from "../../Components/Footer/ActionButtons";
 import { NavBar } from "../../Components/Navigation/NavBar";
+import {
+  Account,
+  AmazonInfo,
+  BackToTheTopPage,
+  LanguageButtons,
+} from "../../Components/Footer";
 import styles from "./styles.module.css";
 
-export function GamesEssentials() {
+export const GamesEssentials = () => {
   return (
     <>
       <NavBar />
@@ -19,15 +22,16 @@ export function GamesEssentials() {
             <SeeMoreProducts
               key={item.id}
               id={item.id}
-              image={<img src={item.imagesUrl} alt={"images"} />}
+              image={<img src={item.imageUrl} alt={"images"} />}
               title={item.title}
             />
           ))}
         </div>
       </div>
-      <Actions />
-      <AboutAmazon />
-      <ActionButtons />
+      <Account />
+      <BackToTheTopPage />
+      <AmazonInfo />
+      <LanguageButtons />
     </>
   );
-}
+};
