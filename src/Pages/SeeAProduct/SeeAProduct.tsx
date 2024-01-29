@@ -4,7 +4,12 @@ import { message } from "antd";
 import useLocalStorageState from "use-local-storage-state";
 import { INewCartsProps } from "../../Components/ProductsReusables/Products/Product";
 import { NavBar } from "../../Components/Navigation/NavBar";
-import { Actions, ActionButtons, AboutAmazon } from "../../Components/Footer";
+import {
+  BackToTheTopPage,
+  Account,
+  AmazonInfo,
+  LanguageButtons,
+} from "../../Components/Footer";
 import { FormateCurrency } from "../../Utilities/FormateCurrency";
 import all from "../../Data/all.json";
 import styles from "./styles.module.css";
@@ -76,9 +81,10 @@ export const SeeAProduct = () => {
           </div>
         </div>
       </div>
-      <Actions />
-      <AboutAmazon />
-      <ActionButtons />
+      <Account />
+      <BackToTheTopPage />
+      <AmazonInfo />
+      <LanguageButtons />
     </>
   );
 };

@@ -14,7 +14,7 @@ export function SeeMoreProducts(props: INewProductSeeMoreReusable) {
   return (
     <>
       <div className={styles.products_parent}>
-        <Link to={`/product/${props.id}`} className={styles.images}>
+        <Link to={`/product/${props.id}`} className={styles.image}>
           {image}
         </Link>
         <div className={styles.sub_parent}>

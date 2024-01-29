@@ -1,12 +1,16 @@
-import { Actions } from "../Components/Footer/Actions";
-import { AboutAmazon } from "../Components/Footer/AboutAmazon";
 import { NavBar } from "../Components/Navigation/NavBar";
 import { FirstItems } from "../Components/ProductsCards/FirstSection/FirstItems";
 import { FouthItems } from "../Components/ProductsCards/FourthSection/FourthItems";
 import { SecondItems } from "../Components/ProductsCards/SecondSection/SecondItems";
 import { ThirdItems } from "../Components/ProductsCards/ThirdSection/ThirdItems";
-import { ActionButtons } from "../Components/Footer/ActionButtons";
+
 import styles from "./styles.module.css";
+import {
+  Account,
+  BackToTheTopPage,
+  AmazonInfo,
+  LanguageButtons,
+} from "../Components/Footer";
 
 export const Home = () => {
   return (
@@ -16,9 +20,10 @@ export const Home = () => {
       <SecondItems />
       <ThirdItems />
       <FouthItems />
-      <Actions />
-      <AboutAmazon />
-      <ActionButtons />
+      <Account />
+      <BackToTheTopPage />
+      <AmazonInfo />
+      <LanguageButtons />
     </div>
   );
 };

@@ -39,7 +39,7 @@
 }
 
 .item_title:hover {
-  color: rgb(199, 81, 31);
+  color: rgb(196, 85, 0);
 }
 
 .cost {
@@ -53,7 +53,7 @@
   width: 100px;
   background-color: rgb(240, 136, 6);
   border: 0;
-  border-radius: 7px;
+  border-radius: 8px;
   color: #fff;
   font-weight: 800;
   cursor: pointer;

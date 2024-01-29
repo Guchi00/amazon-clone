@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 
-export function Actions() {
+export const Account = () => {
   return (
     <>
       <div className={styles.user_signup_parent_div}>
@@ -21,10 +21,6 @@ export function Actions() {
           </Link>
         </div>
       </div>
-
-      <a href="#top" className={styles.user_back_to_top}>
-        <span className={styles.back_to_top}>Back to top</span>
-      </a>
     </>
   );
-}
+};

@@ -1,7 +1,12 @@
 import React from "react";
 import { Product } from "../../Components/ProductsReusables/Products/Product";
 import { NavBar } from "../../Components/Navigation/NavBar";
-import { Actions, AboutAmazon, ActionButtons } from "../../Components/Footer";
+import {
+  Account,
+  AmazonInfo,
+  BackToTheTopPage,
+  LanguageButtons,
+} from "../../Components/Footer";
 import headsets from "../../Data/headsets.json";
 import styles from "./styles.module.css";
 
@@ -22,9 +27,10 @@ export function Headsets() {
         ))}
       </div>
       {/* <div style={{ height: "100px", width: "80%" }}></div> */}
-      <Actions />
-      <AboutAmazon />
-      <ActionButtons />
+      <Account />
+      <BackToTheTopPage />
+      <AmazonInfo />
+      <LanguageButtons />
     </>
   );
 }

@@ -1,11 +1,16 @@
 import React from "react";
 import { Product } from "../../Components/ProductsReusables/Products/Product";
-import { Actions, AboutAmazon, ActionButtons } from "../../Components/Footer";
+import {
+  Account,
+  AmazonInfo,
+  BackToTheTopPage,
+  LanguageButtons,
+} from "../../Components/Footer";
 import chairs from "../../Data/chairs.json";
 import styles from "./styles.module.css";
 import { NavBar } from "../../Components/Navigation/NavBar";
 
-export function Chairs() {
+export const Chairs = () => {
   return (
     <>
       <NavBar />
@@ -21,9 +26,10 @@ export function Chairs() {
           />
         ))}
       </div>
-      <Actions />
-      <AboutAmazon />
-      <ActionButtons />
+      <Account />
+      <BackToTheTopPage />
+      <AmazonInfo />
+      <LanguageButtons />
     </>
   );
-}
+};

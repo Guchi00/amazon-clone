@@ -11,7 +11,12 @@ import {
 } from "../../Components/ProductsReusables/Products/Product";
 import { Quantifier, Operation } from "../../Components/Quantifier/Quantifier";
 import { FormateCurrency } from "../../Utilities/FormateCurrency";
-import { Actions, AboutAmazon, ActionButtons } from "../../Components/Footer";
+import {
+  Account,
+  AmazonInfo,
+  BackToTheTopPage,
+  LanguageButtons,
+} from "../../Components/Footer";
 
 import styles from "./styles.module.css";
 import { TotalPrice } from "../../Components/TotalPrice/TotalPrice";
@@ -155,9 +160,10 @@ export function Cart(props: INewCartsProps) {
           </div>
         </div>
       </div>
-      <Actions />
-      <AboutAmazon />
-      <ActionButtons />
+      <Account />
+      <BackToTheTopPage />
+      <AmazonInfo />
+      <LanguageButtons />
     </>
   );
 }
