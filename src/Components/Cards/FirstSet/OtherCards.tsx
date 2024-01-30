@@ -12,10 +12,10 @@ const data: { title: string; imageUrl: string; actionUrl: string }[] = [
     actionUrl: "/pcs",
   },
   {
-    title: "Small gifts under $20",
+    title: "Deals on shoes under $70",
     imageUrl:
-      "https://assets.aboutamazon.com/dims4/default/ef95a9b/2147483647/strip/true/crop/3335x3335+0+0/resize/743x743!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2Fb7%2F09%2F38dd756b45cf9e50ecc362aace87%2Fus2023db107-holiday-bfcm-box-tape-glitter-still-1-1-so1.jpg",
-    actionUrl: "/gifts?maxPrice=20",
+      "https://m.media-amazon.com/images/I/61FJBzfAI5L._AC_UF894,1000_QL80_.jpg",
+    actionUrl: "/shoes?maxPrice=70",
   },
   {
     title: "Toys under $25",

@@ -6,3 +6,6 @@ export * from "./Cart";
 export * from "./Checkout";
 export * from "./SeeAProduct";
 export * from "./Pcs";
+export * from "./Shoes";
+export * from "./ChildrenToys";
+export * from "./Fashion";

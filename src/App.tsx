@@ -14,6 +14,9 @@ import {
   Checkout,
   SeeAProduct,
   Pcs,
+  Shoes,
+  ChildrenToys,
+  Fashion,
 } from "./Pages";
 
 const App = () => {
@@ -32,6 +35,9 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/pcs" element={<Pcs />} />
+        <Route path="/shoes" element={<Shoes />} />
+        <Route path="/toys" element={<ChildrenToys />} />
+        <Route path="/fashion" element={<Fashion />} />
         <Route path="*" element={<>404</>} />
       </Routes>
     </BrowserRouter>
