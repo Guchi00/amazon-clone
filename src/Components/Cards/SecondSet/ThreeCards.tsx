@@ -21,7 +21,7 @@ const data: { title: string; imageUrl: string; actionUrl: string }[] = [
     title: "Activity tracker and smart watches",
     imageUrl:
       "https://m.media-amazon.com/images/I/71l6cnvwnXL._AC_UF1000,1000_QL80_.jpg",
-    actionUrl: "/activitytracker&smartwatches",
+    actionUrl: "/watches",
   },
 ];
 
