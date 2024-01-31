@@ -11,3 +11,7 @@ export * from "./ChildrenToys";
 export * from "./Fashion";
 export * from "./Laptops";
 export * from "./Watches";
+export * from "./Homes";
+export * from "./Dinning";
+export * from "./Beauty";
+export * from "./Kitchen";
