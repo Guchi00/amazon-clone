@@ -14,8 +14,7 @@
 }
 .title {
   font-size: 30px;
-  margin-top: 40px;
-  /* margin-bottom: 20px; */
+  margin-top: 50px;
   font-weight: 500;
   color: black;
 }
@@ -24,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 350px;
+  height: 420px;
   width: 85%;
   border: solid 1px rgb(200, 204, 204);
   border-left: none;
@@ -32,26 +31,23 @@
 }
 
 .img {
-  height: 320px;
-  width: 18%;
+  height: 330px;
+  width: 27%;
   /* border: solid 1px; */
 }
 
 .contents {
   height: 300px;
-  width: 75%;
-  /* border: solid 1px; */
+  width: 70%;
   display: flex;
   flex-direction: column;
 }
 
 .product_title {
-  width: 75%;
-  /* border: solid 1px; */
+  width: 90%;
   font-size: 17px;
   font-weight: 500;
   margin-top: 20px;
-  /* font-weight: 400; */
 }
 
 .product_title:hover {

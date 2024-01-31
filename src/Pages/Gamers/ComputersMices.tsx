@@ -14,8 +14,14 @@ export function ComputersMices() {
   return (
     <>
       <NavBar />
-      <div className={styles.headset_container}>
-        <span className={styles.headset_title}>Gaming Mices</span>
+      <div className={styles.container}>
+        <span className={styles.title}>Gaming Mices</span>
+        <div className={styles.text_parent}>
+          <h3>Results</h3>
+          <span className={styles.product_detail}>
+            Price and other details may vary based on products price and color.
+          </span>
+        </div>
         {computerMices.map((items) => (
           <Product
             key={items.id}
