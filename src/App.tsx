@@ -18,6 +18,7 @@ import {
   ChildrenToys,
   Fashion,
   Laptops,
+  Watches,
 } from "./Pages";
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
         <Route path="/toys" element={<ChildrenToys />} />
         <Route path="/fashion" element={<Fashion />} />
         <Route path="/laptops" element={<Laptops />} />
+        <Route path="/watches" element={<Watches />} />
         <Route path="*" element={<>404</>} />
       </Routes>
     </BrowserRouter>
