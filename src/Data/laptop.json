@@ -1,0 +1,32 @@
+[
+  {
+    "id": 61,
+    "imageUrl": "https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71jw-oRPFTL._AC_UY436_FMwebp_QL65_.jpg",
+    "title": "V15 Gen 4 Laptop, 15.6 FHD Display, AMD Ryzen 3 7320U Processor, Long Battery Life, RJ-45, USB-C, HDMI, w/WOWPC Bundle, Windows 11 Pro (16GB RAM | 1TB PCIe SSD)",
+    "cost": 429.0
+  },
+  {
+    "id": 62,
+    "imageUrl": "https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71ibYc4Nc5L._AC_UY436_FMwebp_QL65_.jpg",
+    "title": "IdeaPad 15.6 Laptop, Student and Business, Intel Dual-core Processor, 16GB Memory, 1TB SSD Storage, 15.6 FHD Anti-Glare Display, Windows 11 Pro, w/WOWPC 3-in-1 500GB Bundle",
+    "cost": 339.0
+  },
+  {
+    "id": 63,
+    "imageUrl": "https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71juF7A+MsL._AC_UY436_FMwebp_QL65_.jpg",
+    "title": "HP Victus 15 Gaming Laptop, 15.6 FHD 144Hz Display, AMD Ryzen 5 7535HS, 16GB DDR5 RAM, 512GB PCIe M.2 SSD, NVIDIA GeForce RTX 2050, HDMI, Webcam, Backlit Keyboard, Wi-Fi 6, Windows 11 Home, Silver",
+    "cost": 607.0
+  },
+  {
+    "id": 64,
+    "imageUrl": "https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71NXG3-81RL._AC_UY436_FMwebp_QL65_.jpg",
+    "title": "ACEMAGIC Laptop Computer, Traditional Laptop Computer,Intel Quad-12th Alder Lake N95(Up to 3.4GHz), 16GB DDR4 512GB SSD Windows 11 Laptop with Metal Shell, Support 15.6 FHD, WiFi, BT5.0, Speaker",
+    "cost": 359.99
+  },
+  {
+    "id": 65,
+    "imageUrl": "https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71BikO78W9L._AC_UY436_FMwebp_QL65_.jpg",
+    "title": "15.6inch Windows 11 Laptop, 16GB RAM/1TB NVMe SSD, 1920x1080 IPS Display, Intel N95 Quad Core Laptop Computer, Support 2.4G/5G Hz WiFi, BT, RJ45, Type-c PD 3.0 Charging",
+    "cost": 359.0
+  }
+]

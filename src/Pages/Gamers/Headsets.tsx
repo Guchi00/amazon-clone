@@ -10,12 +10,18 @@ import {
 import headsets from "../../Data/headsets.json";
 import styles from "./styles.module.css";
 
-export function Headsets() {
+export const Headsets = () => {
   return (
     <>
       <NavBar />
-      <div className={styles.headset_container}>
-        <span className={styles.headset_title}>Gaming Headsets</span>
+      <div className={styles.container}>
+        <span className={styles.title}>Gaming Headsets</span>
+        <div className={styles.text_parent}>
+          <h3>Results</h3>
+          <span className={styles.product_detail}>
+            Price and other details may vary based on products price and color.
+          </span>
+        </div>
         {headsets.map((product: any) => (
           <Product
             key={product.id}
@@ -33,4 +39,4 @@ export function Headsets() {
       <LanguageButtons />
     </>
   );
-}
+};
