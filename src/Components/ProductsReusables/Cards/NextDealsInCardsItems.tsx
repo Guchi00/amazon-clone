@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-export interface INewOtherCardsItems {
+export interface INewNextDealsInCardsItems {
   title: string;
   image: React.ReactNode;
   action: React.ReactNode;
 }
 
-export function OtherCardsItems(props: INewOtherCardsItems) {
+export const NextDealsInCardsItems = (props: INewNextDealsInCardsItems) => {
   const { title, image, action } = props;
 
   return (
@@ -25,4 +25,4 @@ export function OtherCardsItems(props: INewOtherCardsItems) {
       </div>
     </>
   );
-}
+};

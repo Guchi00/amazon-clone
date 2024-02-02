@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 import { ShopNow } from "../../Components/ProductsReusables/ShopNow/ShopNow";
-import beautyData from "../../Data/beauty.json";
+import seeMoreProductsData from "../../Data/seeMoreProducts.json";
 import { NavBar } from "../../Components/Navigation/NavBar";
 import {
   Account,
@@ -10,7 +10,7 @@ import {
   Buttons,
 } from "../../Components/Footer";
 
-export const HealthAndBeauty = () => {
+export const SeeMoreProducts = () => {
   return (
     <>
       <NavBar />
@@ -22,7 +22,7 @@ export const HealthAndBeauty = () => {
           </span>
         </div>
         <div className={styles.wrapper}>
-          {beautyData.map((product) => (
+          {seeMoreProductsData.map((product) => (
             <ShopNow
               key={product.id}
               title={product.title}

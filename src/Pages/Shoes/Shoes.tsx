@@ -7,7 +7,7 @@ import {
   Account,
   AmazonInfo,
   BackToTheTopPage,
-  LanguageButtons,
+  Buttons,
 } from "../../Components/Footer";
 
 export const Shoes = () => {
@@ -36,7 +36,7 @@ export const Shoes = () => {
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />
-      <LanguageButtons />
+      <Buttons />
     </>
   );
 };

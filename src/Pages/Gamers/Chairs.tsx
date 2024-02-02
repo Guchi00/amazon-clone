@@ -4,7 +4,7 @@ import {
   Account,
   AmazonInfo,
   BackToTheTopPage,
-  LanguageButtons,
+  Buttons,
 } from "../../Components/Footer";
 import chairs from "../../Data/chairs.json";
 import styles from "./styles.module.css";
@@ -35,7 +35,7 @@ export const Chairs = () => {
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />
-      <LanguageButtons />
+      <Buttons />
     </>
   );
 };

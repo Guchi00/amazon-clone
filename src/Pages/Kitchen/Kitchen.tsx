@@ -7,7 +7,7 @@ import {
   Account,
   AmazonInfo,
   BackToTheTopPage,
-  LanguageButtons,
+  Buttons,
 } from "../../Components/Footer";
 
 export const Kitchen = () => {
@@ -36,7 +36,7 @@ export const Kitchen = () => {
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />
-      <LanguageButtons />
+      <Buttons />
     </>
   );
 };

@@ -6,7 +6,7 @@ import {
   Account,
   AmazonInfo,
   BackToTheTopPage,
-  LanguageButtons,
+  Buttons,
 } from "../../Components/Footer";
 import styles from "./styles.module.css";
 
@@ -31,7 +31,7 @@ export const GamesEssentials = () => {
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />
-      <LanguageButtons />
+      <Buttons />
     </>
   );
 };

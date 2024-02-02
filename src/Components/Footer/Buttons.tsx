@@ -119,7 +119,7 @@ const content = (
   </div>
 );
 
-export const LanguageButtons = () => {
+export const Buttons = () => {
   const [showArrow, setShowArrow] = React.useState(true);
   const [arrowAtCenter, setArrowAtCenter] = React.useState(false);
 

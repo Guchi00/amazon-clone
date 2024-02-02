@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HomeAccessories } from "../../HomeAccessories/HomeAccessories";
+import { HomeAccessoriesCardItems } from "../../../ProductsReusables/HomeAccessoriesCardItems/HomeAccessoriesCardItems";
 import styles from "./styles.module.css";
 
 export const data: {
@@ -49,21 +49,18 @@ export function HomeAccessoriesCard() {
           }}
         >
           {data.map((items) => (
-            <HomeAccessories
+            <HomeAccessoriesCardItems
               key={items.subTitle}
               image={<img src={items.imageUrl} alt={"images"} />}
               subTitle={
-                <Link
-                  to={items.subTitleUrl}
-                  className={styles.subTitle_link_props}
-                >
+                <Link to={items.subTitleUrl} className={styles.subTitle_link}>
                   {items.subTitle}
                 </Link>
               }
             />
           ))}
         </div>
-        <Link to="/" className={styles.see_more}>
+        <Link to="/products" className={styles.see_more}>
           See more
         </Link>
       </div>

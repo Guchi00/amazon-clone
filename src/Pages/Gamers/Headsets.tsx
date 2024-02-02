@@ -5,7 +5,7 @@ import {
   Account,
   AmazonInfo,
   BackToTheTopPage,
-  LanguageButtons,
+  Buttons,
 } from "../../Components/Footer";
 import headsets from "../../Data/headsets.json";
 import styles from "./styles.module.css";
@@ -36,7 +36,7 @@ export const Headsets = () => {
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />
-      <LanguageButtons />
+      <Buttons />
     </>
   );
 };

@@ -1,29 +1,30 @@
 import { NavBar } from "../Components/Navigation/NavBar";
-import { FirstItems } from "../Components/ProductsCards/FirstSection/FirstItems";
-import { FouthItems } from "../Components/ProductsCards/FourthSection/FourthItems";
-import { SecondItems } from "../Components/ProductsCards/SecondSection/SecondItems";
-import { ThirdItems } from "../Components/ProductsCards/ThirdSection/ThirdItems";
+import { SingleCarousel } from "../Components/ProductsCards/SingleCarousel/SingleCarousel";
+import { MultipleCarouselHomes } from "../Components/ProductsCards/MultipleCarousel/MultipleCarouselHomes";
+import { DealsInCards } from "../Components/ProductsCards/Cards/DealsInCards/DealsInCards";
+import { NextDealsInCards } from "../Components/ProductsCards/Cards/NextDealsInCards/NextDealsInCards";
 
 import styles from "./styles.module.css";
 import {
   Account,
   BackToTheTopPage,
   AmazonInfo,
-  LanguageButtons,
+  Buttons,
 } from "../Components/Footer";
-
+import { MultipleCarouselWatches } from "../Components/ProductsCards/MultipleCarousel/MultipleCarouselWatches";
 export const Home = () => {
   return (
     <div className={styles.home_page}>
       <NavBar />
-      <FirstItems />
-      <SecondItems />
-      <ThirdItems />
-      <FouthItems />
+      <SingleCarousel />
+      <DealsInCards />
+      <NextDealsInCards />
+      <MultipleCarouselHomes />
+      <MultipleCarouselWatches />
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />
-      <LanguageButtons />
+      <Buttons />
     </div>
   );
 };

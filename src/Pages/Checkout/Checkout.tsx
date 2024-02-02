@@ -10,7 +10,7 @@ import {
   Account,
   AmazonInfo,
   BackToTheTopPage,
-  LanguageButtons,
+  Buttons,
 } from "../../Components/Footer";
 import { TotalPrice } from "../../Components/TotalPrice/TotalPrice";
 import { FormateCurrency } from "../../Utilities/FormateCurrency";
@@ -205,7 +205,7 @@ export const Checkout = (props: INewCartsProps) => {
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />
-      <LanguageButtons />
+      <Buttons />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import { HomeAccessoriesCard } from "./HomeAccessoriesCard";
-import { ThreeCardsItems } from "./ThreeCardsItems";
+import { NextDealsInCardsItems } from "../../../ProductsReusables/Cards/NextDealsInCardsItems";
 
 const data: { title: string; imageUrl: string; actionUrl: string }[] = [
   {
@@ -25,24 +25,22 @@ const data: { title: string; imageUrl: string; actionUrl: string }[] = [
   },
 ];
 
-export function ThreeCards() {
+export const NextDealsInCards = () => {
   return (
-    <>
-      <div className={styles.parent}>
-        <HomeAccessoriesCard />
-        {data.map((items) => (
-          <ThreeCardsItems
-            key={items.title}
-            title={items.title}
-            image={<img src={items.imageUrl} alt={"images"} />}
-            action={
-              <Link to={items.actionUrl} className={styles.action_link_props}>
-                Shop now
-              </Link>
-            }
-          />
-        ))}
-      </div>
-    </>
+    <div className={styles.parent}>
+      <HomeAccessoriesCard />
+      {data.map((items) => (
+        <NextDealsInCardsItems
+          key={items.title}
+          title={items.title}
+          image={<img src={items.imageUrl} alt={"images"} />}
+          action={
+            <Link to={items.actionUrl} className={styles.action_link}>
+              Shop now
+            </Link>
+          }
+        />
+      ))}
+    </div>
   );
-}
+};

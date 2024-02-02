@@ -6,7 +6,7 @@ I just want to use it as a measure */
   /* align-items: flex-end; */
   justify-content: center;
   /* height: 600px;   */
-  
+
   /* position: relative; */
   /* border: solid 1px  */
 }
@@ -20,9 +20,8 @@ I just want to use it as a measure */
 
 .image_contents {
   width: 100%;
-  height: 400px;
+  height: 700px;
   cursor: pointer;
   object-fit: cover;
   /* border: solid 1px  */
 }
-
