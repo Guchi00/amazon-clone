@@ -27,6 +27,10 @@
   color: #666666;
 }
 
+.items {
+  font-weight: 600;
+}
+
 /* SearchBar styles */
 .search_inputs {
   display: flex;

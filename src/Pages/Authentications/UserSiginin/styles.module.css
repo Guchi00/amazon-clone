@@ -82,7 +82,7 @@
   font-weight: 500;
   height: 60px;
   width: 300px;
-  border-bottom:  solid 1px rgb(231, 231, 231);
+  border-bottom: solid 1px rgb(231, 231, 231);
   /* box-shadow: 0 4px 6px -6px  #6a6868; */
 }
 
@@ -93,12 +93,12 @@
 
 .need_help {
   color: rgb(0, 102, 192);
+  text-decoration: none;
 }
 
 .need_help:hover {
   color: rgb(196, 85, 0);
 }
-
 
 .buying_for_work {
   font-weight: 700;
@@ -122,7 +122,7 @@
 .divide_new_to_amazon {
   height: 30px;
   width: 120px;
-  border-bottom:  solid 1px rgb(231, 231, 231);
+  border-bottom: solid 1px rgb(231, 231, 231);
   margin-left: 8px;
   margin-right: 8px;
 }
@@ -140,16 +140,16 @@
   height: 32px;
   border-radius: 7px;
   background-color: #fff;
-  border:  solid 1px rgb(231, 231, 231);
-  box-shadow: 0 4px 6px -7px  #6a6868;
+  border: solid 1px rgb(231, 231, 231);
+  box-shadow: 0 4px 6px -7px #6a6868;
   font-weight: 600;
 }
 
 .divider {
   height: 30px;
   width: 100%;
-  border-bottom:  solid 1px rgb(247, 247, 247);
-  box-shadow: 0 4px 6px -6px  #6a6868;
+  border-bottom: solid 1px rgb(247, 247, 247);
+  box-shadow: 0 4px 6px -6px #6a6868;
 }
 
 .last_content {
@@ -159,7 +159,7 @@
 
 .links {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   margin-top: 25px;
 }
 

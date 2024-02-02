@@ -10,6 +10,7 @@ import {
   BackToTheTopPage,
   AmazonInfo,
   Buttons,
+  Divider,
 } from "../Components/Footer";
 import { MultipleCarouselWatches } from "../Components/ProductsCards/MultipleCarousel/MultipleCarouselWatches";
 export const Home = () => {
@@ -21,6 +22,7 @@ export const Home = () => {
       <NextDealsInCards />
       <MultipleCarouselHomes />
       <MultipleCarouselWatches />
+      <Divider />
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />

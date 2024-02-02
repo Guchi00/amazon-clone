@@ -9,7 +9,6 @@
   flex-direction: column;
   background-color: #fff;
   border: solid 1px #dddddd;
-  margin-top: 50px;
 }
 
 .personalize_recon {
@@ -223,4 +222,12 @@
   width: 18px;
   height: 11px;
   margin-right: 7px;
+}
+
+.divider {
+  height: 40px;
+  width: 100%;
+  border-color: #dddddd;
+  background-color: #fff;
+  margin-top: 30px;
 }

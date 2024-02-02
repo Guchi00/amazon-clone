@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import useLocalStorageState from "use-local-storage-state";
 import { AddressButton } from "../Location/AddressButton";
 import { SearchBar } from "../Filter/SearchBar";
-import { ProductsMenu } from "../Filter/ProductsMenu";
+import { MenuBar } from "../Filter/MenuBar";
 import { Language } from "../Popovers/LanguageSettings/Language";
 import { Accounts } from "../Popovers/Accounts/Accounts";
 import { ReturnsAndOrder } from "../Orders/ReturnsAndOrder";
@@ -33,7 +33,7 @@ export const NavBar: React.FunctionComponent = () => {
           />
         </div>
         <AddressButton />
-        <ProductsMenu />
+        <MenuBar />
         <SearchBar placeholder="Search Amazon..." data={productData} />
         <Language />
         <Accounts />
