@@ -881,5 +881,45 @@
     "cost": 39.99,
     "name": "SHPAVVER Head Shavers",
     "link": "/beauty"
+  },
+  {
+    "id": 111,
+    "imageUrl": "https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81v5g3tFvbL._AC_UY436_FMwebp_QL65_.jpg",
+    "title": "Smart Watches for Women, 1.91 HD Fitness Tracker Watch with Blood Pressure/Heart Rate Monitor, Bluetooth 5.3 Make Calls Smart Watch for Android/iOS Phones, IP68 Waterproof Fitness Watch for Women",
+    "cost": 49.99,
+    "name": "Smart Watches for Women",
+    "link": "/watches"
+  },
+  {
+    "id": 112,
+    "imageUrl": "https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/618sdxRxWIL._AC_UY436_FMwebp_QL65_.jpg",
+    "title": "Amzhero Fitness Smart Watch with Alexa for Women Men, 24/7 Heart Rate, Blood Oxygen, Stress and Sleep Tracker,100 Sports Modes, 5ATM Waterproof Activity Trackers and Smart Watches",
+    "cost": 39.99,
+    "name": "Amzhero Fitness Smart Watch",
+    "link": "/watches"
+  },
+  {
+    "id": 113,
+    "imageUrl": "https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/7104SkxvhXL._AC_UY436_FMwebp_QL65_.jpg",
+    "title": "P66D Smart Watch, Modern Style, Green Silver, 1.85 Touch Screen, Bluetooth Call and Message Reminder, All-day Health Monitoring, 100+ Sports Modes, IP68 Waterproof",
+    "cost": 29.99,
+    "name": "Touch screen Smart Watch, Modern Style",
+    "link": "/watches"
+  },
+  {
+    "id": 114,
+    "imageUrl": "https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71QSBkE3EOL._AC_UL640_FMwebp_QL65_.jpg",
+    "title": "KEEPONFIT Smart Watch, 1.8 Touch Screen Smartwatch with Alexa Built-in IP68 Waterproof, Fitness Tracker with 100+ Sports Modes Heart Rate/Blood Oxygen/Stress/Sleep Monitor for Men and Women (Black)",
+    "cost": 39.99,
+    "name": "Smart Watch Touch Screen Smartwatch",
+    "link": "/watches"
+  },
+  {
+    "id": 115,
+    "imageUrl": "https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71JNLo9ZZFL._AC_UY436_FMwebp_QL65_.jpg",
+    "title": "Smart Watches for Women and Men 2024 Smart Watch Android iOS Phone Compatible, Phone Call, Accept Message, Alexa, Sleep Tracker, Health Monitor, 110 Dials, Fitness Tracker, 120 Sport",
+    "cost": 49.98,
+    "name": "Smart Watches for Women and Men",
+    "link": "/watches"
   }
 ]

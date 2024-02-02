@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import { GameAccessoriesCard } from "./GameAccessoriesCard";
-import { OtherCardsItems } from "./OtherCardsItems";
+import { DealsInCardsItems } from "../../../ProductsReusables/Cards/DealsInCardsItems";
 
 const data: { title: string; imageUrl: string; actionUrl: string }[] = [
   {
@@ -25,13 +25,13 @@ const data: { title: string; imageUrl: string; actionUrl: string }[] = [
   },
 ];
 
-export function OtherCards() {
+export function DealsInCards() {
   return (
     <>
       <div className={styles.parent}>
         <GameAccessoriesCard />
         {data.map((items) => (
-          <OtherCardsItems
+          <DealsInCardsItems
             key={items.title}
             title={items.title}
             image={<img src={items.imageUrl} alt={"images"} />}

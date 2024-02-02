@@ -15,7 +15,7 @@ import {
   Account,
   AmazonInfo,
   BackToTheTopPage,
-  LanguageButtons,
+  Buttons,
 } from "../../Components/Footer";
 
 import styles from "./styles.module.css";
@@ -163,7 +163,7 @@ export function Cart(props: INewCartsProps) {
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />
-      <LanguageButtons />
+      <Buttons />
     </>
   );
 }

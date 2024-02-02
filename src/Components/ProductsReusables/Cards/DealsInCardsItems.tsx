@@ -1,20 +1,18 @@
-import React from 'react';
+import React from "react";
 import styles from "./styles.module.css";
 
-
-export interface INewOtherThreeCardsItems {
+export interface INewOtherCardsItems {
   title: string;
   image: React.ReactNode;
   action: React.ReactNode;
 }
 
-export function ThreeCardsItems(props: INewOtherThreeCardsItems) {
-
-  const { title, image, action } = props
+export function DealsInCardsItems(props: INewOtherCardsItems) {
+  const { title, image, action } = props;
 
   return (
     <>
-        <div className={styles.allcards}>
+      <div className={styles.allcards}>
         <div className={styles.cards_title}>
           <span>{title}</span>
         </div>
@@ -26,5 +24,5 @@ export function ThreeCardsItems(props: INewOtherThreeCardsItems) {
         </div>
       </div>
     </>
-  )
+  );
 }

@@ -9,6 +9,7 @@
   flex-direction: column;
   background-color: #fff;
   border: solid 1px #dddddd;
+  margin-top: 50px;
 }
 
 .personalize_recon {
@@ -215,7 +216,7 @@
   background-color: rgb(34, 48, 62);
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .us_flag {

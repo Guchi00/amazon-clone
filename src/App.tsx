@@ -23,6 +23,7 @@ import {
   Dining,
   HealthAndBeauty,
   Kitchen,
+  SeeMoreProducts,
 } from "./Pages";
 
 const App = () => {
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/dining" element={<Dining />} />
         <Route path="/beauty" element={<HealthAndBeauty />} />
         <Route path="/kitchen" element={<Kitchen />} />
+        <Route path="/products" element={<SeeMoreProducts />} />
         <Route path="*" element={<>404</>} />
       </Routes>
     </BrowserRouter>

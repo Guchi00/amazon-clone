@@ -43,45 +43,11 @@
   font-weight: 500;
 }
 
-/* This is for the other three remaining card. OtherCardsItems*/
-.allcards {
-  height: 445px;
-  width: 350px;
-  /* border: solid 1px; */
-  background-color: #fff;
-  margin: 10px;
+.see_more:hover {
+  color: rgb(199, 81, 31);
 }
 
-.cards_title {
-  margin-left: 15px;
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.cards_image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.cards_action {
-  margin-top: 20px;
-  margin-left: 15px;
-  font-size: 12px;
-  color: rgb(2, 113, 133);
-  font-weight: 600;
-}
-
-.image {
-  > img {
-    width: 318px;
-    height: 330px;
-  }
-}
-
-/*And this is for the GameAccessoriesCard and the OtherCardItems Container/Parent. OtherCards*/
+/*And this is for the GameAccessoriesCard and the DealsInCards. Container/Parent.*/
 .parent {
   display: flex;
   /* align-items: flex-end; */
@@ -96,4 +62,9 @@
 .action_link {
   text-decoration: none;
   color: rgb(4, 112, 133);
+}
+
+.action_link:hover {
+  color: rgb(199, 81, 31);
+  /* text-decoration-line: underline; */
 }

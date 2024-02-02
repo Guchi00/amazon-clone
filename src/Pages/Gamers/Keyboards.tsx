@@ -4,7 +4,7 @@ import {
   Account,
   AmazonInfo,
   BackToTheTopPage,
-  LanguageButtons,
+  Buttons,
 } from "../../Components/Footer";
 import keyboards from "../../Data/keyboard.json";
 import styles from "./styles.module.css";
@@ -35,7 +35,7 @@ export function Keyboards() {
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />
-      <LanguageButtons />
+      <Buttons />
     </>
   );
 }

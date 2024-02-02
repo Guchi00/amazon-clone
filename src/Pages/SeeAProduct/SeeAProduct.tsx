@@ -8,7 +8,7 @@ import {
   BackToTheTopPage,
   Account,
   AmazonInfo,
-  LanguageButtons,
+  Buttons,
 } from "../../Components/Footer";
 import { FormateCurrency } from "../../Utilities/FormateCurrency";
 import all from "../../Data/all.json";
@@ -84,7 +84,7 @@ export const SeeAProduct = () => {
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />
-      <LanguageButtons />
+      <Buttons />
     </>
   );
 };

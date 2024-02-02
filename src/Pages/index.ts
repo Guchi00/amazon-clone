@@ -15,3 +15,4 @@ export * from "./Homes";
 export * from "./Dinning";
 export * from "./Beauty";
 export * from "./Kitchen";
+export * from "./SeeMoreProducts";

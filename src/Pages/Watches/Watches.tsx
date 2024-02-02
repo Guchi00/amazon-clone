@@ -5,7 +5,7 @@ import {
   Account,
   AmazonInfo,
   BackToTheTopPage,
-  LanguageButtons,
+  Buttons,
 } from "../../Components/Footer";
 import watchData from "../../Data/watches.json";
 import styles from "./styles.module.css";
@@ -36,7 +36,7 @@ export const Watches = () => {
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />
-      <LanguageButtons />
+      <Buttons />
     </>
   );
 };

@@ -41,7 +41,7 @@ export const NavBar: React.FunctionComponent = () => {
         <CartWidget productsCount={productsCount} />
       </div>
 
-      <div className={styles.second_nav}>helloe</div>
+      <div className={styles.second_nav}></div>
     </div>
   );
 };

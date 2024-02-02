@@ -1,0 +1,12 @@
+.image_container {
+  height: 220px;
+  width: 220px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > img {
+    height: 220px;
+    width: 220px;
+  }
+}

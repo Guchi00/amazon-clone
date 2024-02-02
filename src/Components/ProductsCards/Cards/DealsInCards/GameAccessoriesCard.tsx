@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
-import { Gaming } from "../../GamingAccessories/Gaming";
+import { GamesAccessoriesCardItems } from "../../../ProductsReusables/GamesAccessoriesCardItems/GamesAccessoriesCardItems";
 
 export const data: {
   imageUrl: string;
@@ -55,7 +55,7 @@ export function GameAccessoriesCard() {
           }}
         >
           {data.map((item) => (
-            <Gaming
+            <GamesAccessoriesCardItems
               key={item.subTitle}
               image={
                 // <Link to={item.imageTo} className={styles.image}>
