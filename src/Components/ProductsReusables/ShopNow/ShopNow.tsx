@@ -27,6 +27,7 @@ export const ShopNow = (props: INewShopNowProps) => {
           {props.title}
         </Link>
         <Rating
+          productId={props.id}
           maxStar={5}
           initialRating={userRating}
           onRatingChange={handleRatingChange}

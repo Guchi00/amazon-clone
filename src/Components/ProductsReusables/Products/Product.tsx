@@ -61,6 +61,7 @@ export function Product(props: ProductProps) {
           </Link>
 
           <Rating
+            productId={props.id}
             maxStar={5}
             initialRating={userRating}
             onRatingChange={handleRatingChange}

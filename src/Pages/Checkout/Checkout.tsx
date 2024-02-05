@@ -11,6 +11,7 @@ import {
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
+  Divider,
 } from "../../Components/Footer";
 import { TotalPrice } from "../../Components/TotalPrice/TotalPrice";
 import { FormateCurrency } from "../../Utilities/FormateCurrency";
@@ -202,6 +203,7 @@ export const Checkout = (props: INewCartsProps) => {
           </div>
         </div>
       </div>
+      <Divider />
       <Account />
       <BackToTheTopPage />
       <AmazonInfo />

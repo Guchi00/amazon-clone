@@ -1,19 +1,40 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import styles from "./styles.module.css";
+import useLocalStorageState from "use-local-storage-state";
+import allProducts from "../../Data/all.json";
 
 interface INewRatingProps {
+  productId: number;
   maxStar: number;
   initialRating: number;
   onRatingChange: (rating: number) => void;
 }
 
+const productRatings = allProducts.reduce((acc, curr) => {
+  acc[`${curr.id}`] = 0;
+  return acc;
+}, {} as Record<string, number>);
+
 export const Rating = (props: INewRatingProps) => {
-  const { maxStar, initialRating = 0, onRatingChange } = props;
-  const [rating, setRating] = useState(initialRating);
+  const { maxStar, onRatingChange, productId } = props;
+  // const [rating, setRating] = useState(productRatings[productId]);
+  const [ratings, setRatings] = useLocalStorageState<Record<string, number>>(
+    "productRatings",
+    { defaultValue: productRatings }
+  );
+
+  const rating = useMemo(() => {
+    return ratings[productId];
+  }, [ratings]);
 
   const handleStarClick = (starIndex: number) => {
     const newRating = starIndex + 1;
-    setRating(newRating);
+    // setRating(newRating);
+
+    console.log(productId, ratings, "args >>>>");
+    console.log(newRating, "new rsitign");
+    setRatings((previous) => ({ ...previous, [productId]: newRating }));
+    console.log(productId, ratings, "args >>>>");
     onRatingChange(newRating);
   };
   return (
