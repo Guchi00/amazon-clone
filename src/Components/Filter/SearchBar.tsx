@@ -63,7 +63,7 @@ export const SearchBar = (props: INewSearchBarType) => {
 
       {filteredData.length !== 0 && (
         <div className={styles.data_result}>
-          {filteredData.slice(0, 10).map((value, key) => {
+          {filteredData.slice(0, 15).map((value, key) => {
             return (
               <Link className={styles.data_item} to={value.link}>
                 <p>{value.name}</p>

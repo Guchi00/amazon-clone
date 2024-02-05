@@ -49,6 +49,7 @@
   border: solid 1px rgb(148, 148, 148);
   border-radius: 3px;
   margin-top: 5px;
+  padding-left: 10px;
 }
 
 .text_password_instructions {
@@ -78,8 +79,8 @@
   font-weight: 500;
   height: 60px;
   width: 300px;
-  border-bottom:  solid 1px rgb(247, 247, 247);
-  box-shadow: 0 4px 6px -6px  #6a6868;
+  border-bottom: solid 1px rgb(247, 247, 247);
+  box-shadow: 0 4px 6px -6px #6a6868;
 }
 
 .diff_styling {
@@ -89,7 +90,6 @@
 .diff_styling:hover {
   color: rgb(196, 85, 0);
 }
-
 
 .text_already_have_account {
   font-size: 12px;
@@ -123,8 +123,8 @@
 .divider {
   height: 30px;
   width: 100%;
-  border-bottom:  solid 1px rgb(247, 247, 247);
-  box-shadow: 0 4px 6px -6px  #6a6868;
+  border-bottom: solid 1px rgb(247, 247, 247);
+  box-shadow: 0 4px 6px -6px #6a6868;
 }
 
 .last_content {
@@ -134,7 +134,7 @@
 
 .links {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   margin-top: 25px;
 }
 

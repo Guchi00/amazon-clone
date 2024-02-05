@@ -120,6 +120,7 @@ input:focus {
 
 .data_item:hover {
   background-color: rgb(238, 238, 238);
+  width: 100%;
 }
 
 /* Rating */

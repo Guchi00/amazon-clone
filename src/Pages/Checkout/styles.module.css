@@ -164,7 +164,7 @@
 }
 
 .title_and_itemprice {
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
   /* border: solid 1px; */
   display: flex;

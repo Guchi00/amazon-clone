@@ -115,7 +115,7 @@ export const data = [
   },
 
   {
-    id: 9,
+    id: 8,
     imageUrl:
       "https://stormrigs.in/wp-content/uploads/2020/10/Aurora_2-min-1000x1000-1.jpg",
     title: "Compact Mechanical Gaming Keyboard",

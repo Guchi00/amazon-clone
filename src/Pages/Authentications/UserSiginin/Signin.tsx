@@ -1,9 +1,44 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { message } from "antd";
+import React, { ChangeEvent, useState } from "react";
+import useLocalStorageState from "use-local-storage-state";
+import { Link, useNavigate } from "react-router-dom";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import { InitialStateTypes } from "../UserRegister/Register";
 import styles from "./styles.module.css";
 
-export function Signin() {
+const InitialRegisterState = {
+  userName: "",
+  email: "",
+  password: "",
+  reEnterPassword: "",
+};
+
+export const Signin = () => {
+  const navigate = useNavigate();
+  const [userInput, setUserInput] =
+    useState<InitialStateTypes>(InitialRegisterState);
+  const [existingUsers, setExistingUsers] = useLocalStorageState<string[]>(
+    "existingUsers",
+    { defaultValue: [] }
+  );
+
+  const handleSignIn = () => {
+    if (userInput.email === "") {
+      return message.error("Input is required");
+    }
+    if (!existingUsers.includes(userInput.email)) {
+      return message.error("Unexisting user! Please create an account");
+    } else {
+      navigate("/");
+    }
+  };
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setUserInput((userInputs) => ({
+      ...userInputs,
+      [event.target.name]: event.target.value,
+    }));
+  };
   return (
     <div className={styles.parent}>
       <div className={styles.amazon_logo_parent}>
@@ -19,9 +54,20 @@ export function Signin() {
           <div className={styles.wrap}>
             <span className={styles.text_sign_in}>Sign in</span>
             <label className={styles.label}>Email or mobile phone number</label>
-            <input className={styles.inputs} />
+            <input
+              className={styles.inputs}
+              type="text"
+              name="email"
+              onChange={handleChange}
+            />
 
-            <button className={styles.continue_btn}>Continue</button>
+            <button
+              className={styles.continue_btn}
+              type="button"
+              onClick={handleSignIn}
+            >
+              Continue
+            </button>
             <span className={styles.text_privacy_policy}>
               By continuing, you agree to Amazon's{" "}
               <Link to="" style={{ textDecoration: "none" }}>
@@ -81,4 +127,4 @@ export function Signin() {
       </div>
     </div>
   );
-}
+};

@@ -1,9 +1,65 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { ChangeEvent, useState } from "react";
+import { message } from "antd";
+import { Link, useNavigate } from "react-router-dom";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import styles from "./styles.module.css";
+import useLocalStorageState from "use-local-storage-state";
 
-export function Register() {
+const InitialRegisterState = {
+  userName: "",
+  email: "",
+  password: "",
+  reEnterPassword: "",
+};
+
+export type InitialStateTypes = {
+  userName: string;
+  email: string;
+  password: string;
+  reEnterPassword: string;
+};
+
+export const Register = () => {
+  const navigate = useNavigate();
+  const [userInput, setUserInput] =
+    useState<InitialStateTypes>(InitialRegisterState);
+  const [existingUsers, setExistingUsers] = useLocalStorageState<string[]>(
+    "existingUsers",
+    { defaultValue: [] }
+  );
+
+  const handleRegister = () => {
+    console.log(userInput, "userInput");
+    if (
+      userInput.userName === "" ||
+      userInput.email === "" ||
+      userInput.password === "" ||
+      userInput.reEnterPassword === ""
+    ) {
+      return message.error("All input is required");
+    }
+
+    if (existingUsers.includes(userInput.email)) {
+      return message.error("Sign in! user already exist");
+    }
+
+    if (userInput.password !== userInput.reEnterPassword) {
+      return message.error("Password mismatch");
+    }
+
+    // set existingn users existing users + userInput.email
+    setExistingUsers((current) => [...current, userInput.email]);
+    message.success("Registration done successfully");
+    navigate("/");
+  };
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
+    setUserInput((userInputs) => ({
+      ...userInputs,
+      [event.target.name]: event.target.value,
+    }));
+  };
+
   return (
     <div className={styles.parent}>
       <div className={styles.amazon_logo_parent}>
@@ -22,21 +78,43 @@ export function Register() {
             <input
               placeholder="First and last name"
               className={styles.inputs}
+              type="text"
+              name="userName"
+              onChange={handleChange}
             />
             <label className={styles.label}>Mobile Number or Email </label>
-            <input className={styles.inputs} />
+            <input
+              className={styles.inputs}
+              type="text"
+              name="email"
+              onChange={handleChange}
+            />
             <label className={styles.label}>Password</label>
             <input
               placeholder="At least 6 characters"
               className={styles.inputs}
+              type="password"
+              name="password"
+              onChange={handleChange}
             />
             <span className={styles.text_password_instructions}>
               <span className={styles.i}>i</span> Passwords must be atleast six
               characters.
             </span>
             <label className={styles.label}>Re-enter password</label>
-            <input className={styles.inputs} />
-            <button className={styles.continue_btn}>Continue</button>
+            <input
+              className={styles.inputs}
+              type="password"
+              name="reEnterPassword"
+              onChange={handleChange}
+            />
+            <button
+              className={styles.continue_btn}
+              type="button"
+              onClick={handleRegister}
+            >
+              Continue
+            </button>
             <span className={styles.text_privacy_policy}>
               By creating account, you agree to Amazon's <br></br>{" "}
               <Link to="" style={{ textDecoration: "none" }}>
@@ -91,4 +169,4 @@ export function Register() {
       </div>
     </div>
   );
-}
+};
