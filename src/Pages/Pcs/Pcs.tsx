@@ -5,6 +5,7 @@ import pcsData from "../../Data/pcs.json";
 import { NavBar } from "../../Components/Navigation/NavBar";
 import {
   Account,
+  AmazonAdvert,
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
@@ -37,6 +38,7 @@ export const Pcs = () => {
       <BackToTheTopPage />
       <AmazonInfo />
       <Buttons />
+      <AmazonAdvert />
     </>
   );
 };

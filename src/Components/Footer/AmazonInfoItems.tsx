@@ -30,31 +30,56 @@ export const AmazonInfoItems = (props: INewInformationItems) => {
   return (
     <>
       <div className={styles.data_box}>
-        <span className={styles.title}>{title}</span>
-        <Link to="" className={styles.subtitle}>
-          {subTitleOne}
-        </Link>
-        <Link to="" className={styles.subtitle}>
-          {subTitleTwo}
-        </Link>
-        <Link to="" className={styles.subtitle}>
-          {subTitleThree}
-        </Link>
-        <Link to="" className={styles.subtitle}>
-          {subTitleFour}
-        </Link>
-        <Link to="" className={styles.subtitle}>
-          {subTitleFive}
-        </Link>
-        <Link to="" className={styles.subtitle}>
-          {subTitleSix}
-        </Link>
-        <Link to="" className={styles.subtitle}>
-          {subTitleSeven}
-        </Link>
-        <Link to="" className={styles.subtitle}>
-          {subTitleEight}
-        </Link>
+        <div className={styles.wrap}>
+          <span className={styles.title}>{title}</span>
+        </div>
+        <div className={styles.wrap}>
+          <Link to="" className={styles.subtitle}>
+            {subTitleOne}
+          </Link>
+        </div>
+
+        <div className={styles.wrap}>
+          <Link to="" className={styles.subtitle}>
+            {subTitleTwo}
+          </Link>
+        </div>
+
+        <div className={styles.wrap}>
+          <Link to="" className={styles.subtitle}>
+            {subTitleThree}
+          </Link>
+        </div>
+
+        <div className={styles.wrap}>
+          <Link to="" className={styles.subtitle}>
+            {subTitleFour}
+          </Link>
+        </div>
+
+        <div className={styles.wrap}>
+          <Link to="" className={styles.subtitle}>
+            {subTitleFive}
+          </Link>
+        </div>
+
+        <div className={styles.wrap}>
+          <Link to="" className={styles.subtitle}>
+            {subTitleSix}
+          </Link>
+        </div>
+
+        <div className={styles.wrap}>
+          <Link to="" className={styles.subtitle}>
+            {subTitleSeven}
+          </Link>
+        </div>
+
+        <div className={styles.wrap}>
+          <Link to="" className={styles.subtitle}>
+            {subTitleEight}
+          </Link>
+        </div>
       </div>
     </>
   );

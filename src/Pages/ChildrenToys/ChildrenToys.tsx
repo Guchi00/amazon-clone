@@ -4,6 +4,7 @@ import childrenToyData from "../../Data/childrenToys.json";
 import { NavBar } from "../../Components/Navigation/NavBar";
 import {
   Account,
+  AmazonAdvert,
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
@@ -37,6 +38,7 @@ export const ChildrenToys = () => {
       <BackToTheTopPage />
       <AmazonInfo />
       <Buttons />
+      <AmazonAdvert />
     </>
   );
 };

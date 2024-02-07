@@ -5,6 +5,7 @@ import beautyData from "../../Data/beauty.json";
 import { NavBar } from "../../Components/Navigation/NavBar";
 import {
   Account,
+  AmazonAdvert,
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
@@ -37,6 +38,7 @@ export const HealthAndBeauty = () => {
       <BackToTheTopPage />
       <AmazonInfo />
       <Buttons />
+      <AmazonAdvert />
     </>
   );
 };

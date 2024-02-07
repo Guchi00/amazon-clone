@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "advertOne": "Amazon Music \n Stream millions of songs",
+    "advertTwo": "AmazonGlobal \n Ship Orders Internationally",
+    "advertThree": "IMDbPro \n Get Info Entertainment Professionals Need"
+  },
+  {
+    "id": 2,
+    "advertOne": "Amazon Ads \n Reach customers wherever they spend their time",
+    "advertTwo": "Home Services \n Experienced Pros Happiness Guarantee",
+    "advertThree": "Kindle Direct Publishing \n Indie Digital & Print Publishing Made Easy",
+    "advertFour": "eero WiFi \n Stream 4K Video in Every Room"
+  },
+  {
+    "id": 3,
+    "advertOne": "6pm \n Score deals on fashion brands",
+    "advertTwo": "Amazon Web Services \n Scalable Cloud Computing Services",
+    "advertThree": "Prime Video Direct \n Video Distribution Made Easy",
+    "advertFour": "Blink \n Smart Security for Every Home"
+  },
+  {
+    "id": 4,
+    "advertOne": "AbeBooks \n Books, art & collectibles",
+    "advertTwo": "Audible \n Listen to Books & Original Audio Performances",
+    "advertThree": "Shopbop \n Designer Fashion Brands",
+    "advertFour": "Neighbors App \n Real-Time Crime & Safety Alerts"
+  },
+  {
+    "id": 5,
+    "advertOne": "ACX \n Audiobook Publishing Made Easy",
+    "advertTwo": "Box Office \n Mojo Find Movie Box Office Data",
+    "advertThree": "Woot! \n Deals and Shenanigans",
+    "advertFour": "Amazon Subscription Boxes \n Top subscription boxes – right to your door"
+  },
+  {
+    "id": 6,
+    "advertOne": "Sell on Amazon \n Start a Selling Account",
+    "advertTwo": "Goodreads \n Book reviews & recommendations",
+    "advertThree": "Zappos \n Shoes & Clothing",
+    "advertFour": "PillPack \n Pharmacy Simplified"
+  },
+  {
+    "id": 7,
+    "advertOne": "Amazon Business \n Everything For Your Business",
+    "advertTwo": "IMDb \n Movies, TV & Celebrities",
+    "advertThree": "Ring \n Smart Home Security Systems"
+  }
+]

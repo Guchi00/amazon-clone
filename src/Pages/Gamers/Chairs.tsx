@@ -2,6 +2,7 @@ import React from "react";
 import { Product } from "../../Components/ProductsReusables/Products/Product";
 import {
   Account,
+  AmazonAdvert,
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
@@ -36,6 +37,7 @@ export const Chairs = () => {
       <BackToTheTopPage />
       <AmazonInfo />
       <Buttons />
+      <AmazonAdvert />
     </>
   );
 };

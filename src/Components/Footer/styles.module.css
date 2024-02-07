@@ -1,4 +1,4 @@
-/* For Actions */
+/* For Account */
 .user_signup_parent_div {
   height: 130px;
   width: 100%;
@@ -64,29 +64,30 @@
 
 /* For InformationItems */
 .data_box {
-  height: 350px;
   width: 300px;
-  /* border: solid 1px; */
-  margin-left: 30px;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.wrap {
+  width: 220px;
+  margin-top: 10px;
 }
 
 .title {
   font-weight: 800;
-  margin-bottom: 5px;
   color: #fff;
-  /* border: solid 1px; */
 }
 
 .subtitle {
-  font-size: 14px;
-  color: #fff;
-  margin-top: 10px;
+  font-size: 15px;
+  color: #ddd;
   font-weight: 500;
   text-decoration: none;
-  /* border: solid 1px; */
 }
 
 .subtitle:hover {
@@ -95,20 +96,18 @@
 
 /* For Information */
 .parent {
-  height: 400px;
+  height: 370px;
   width: 100%;
-  /* border: solid 1px; */
   background-color: rgb(34, 48, 62);
   display: flex;
-  align-items: flex-end;
   justify-content: center;
 }
 
-/* For ActionButtons */
-.actionbtns_parent {
+/* For Buttons */
+.bottons_parent {
   height: 100px;
   width: 100%;
-  border: solid 0.1px rgb(221, 221, 221);
+  border: solid 1px #3a4553;
   border-bottom: none;
   border-left: none;
   background-color: rgb(34, 48, 62);
@@ -122,11 +121,11 @@
   width: 82px;
   margin-right: 90px;
   margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .p {
   width: 220px;
-  /* height: 400px; */
 }
 
 .language_option {
@@ -140,6 +139,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5px;
 }
 
 .globe_icon {
@@ -200,6 +200,7 @@
   font-size: 13px;
   font-weight: 600;
   background-color: rgb(34, 48, 62);
+  margin-bottom: 5px;
 }
 
 .united_state_btn {
@@ -216,6 +217,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5px;
 }
 
 .us_flag {
@@ -230,4 +232,107 @@
   border-color: #dddddd;
   background-color: #fff;
   margin-top: 30px;
+}
+
+/* AmazonAdvert */
+.parent_div {
+  height: 470px;
+  width: 100%;
+  background-color: rgb(19, 26, 34);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  height: 400px;
+  width: 100%;
+  background-color: rgb(19, 26, 34);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.row {
+  height: 450px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adverts {
+  width: 65%;
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+  margin-top: 30px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.advertHeading {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.advertHeading:hover {
+  text-decoration: underline;
+}
+
+.adverts:hover {
+  text-decoration: underline;
+}
+
+.terms_and_conditions {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.last_links {
+  text-decoration: none;
+  color: rgb(221, 221, 221);
+  font-size: 13px;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.rules {
+  height: 12px;
+  width: 30px;
+  border: solid 1px #0067ff;
+  font-size: 10px;
+  background-color: #0067ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 5px;
+}
+
+.check {
+  font-size: 12px !important;
+  border: solid 1px #0067ff;
+  background-color: #fff;
+  color: #0067ff;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.close {
+  font-size: 12px !important;
+  background-color: #0067ff;
+  color: rgb(221, 221, 221);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.at {
+  color: rgb(221, 221, 221);
+  font-size: 12px;
+  margin-left: 15px;
+  font-weight: 600;
+  margin-top: 7px;
 }
