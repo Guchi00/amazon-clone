@@ -3,6 +3,7 @@ import { Product } from "../../Components/ProductsReusables/Products/Product";
 import { NavBar } from "../../Components/Navigation/NavBar";
 import {
   Account,
+  AmazonAdvert,
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
@@ -37,6 +38,7 @@ export const Headsets = () => {
       <BackToTheTopPage />
       <AmazonInfo />
       <Buttons />
+      <AmazonAdvert />
     </>
   );
 };

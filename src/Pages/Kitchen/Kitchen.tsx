@@ -5,6 +5,7 @@ import kitchenData from "../../Data/kitchen.json";
 import { NavBar } from "../../Components/Navigation/NavBar";
 import {
   Account,
+  AmazonAdvert,
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
@@ -37,6 +38,7 @@ export const Kitchen = () => {
       <BackToTheTopPage />
       <AmazonInfo />
       <Buttons />
+      <AmazonAdvert />
     </>
   );
 };

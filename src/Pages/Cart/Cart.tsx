@@ -13,6 +13,7 @@ import { Quantifier, Operation } from "../../Components/Quantifier/Quantifier";
 import { FormateCurrency } from "../../Utilities/FormateCurrency";
 import {
   Account,
+  AmazonAdvert,
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
@@ -164,6 +165,7 @@ export function Cart(props: INewCartsProps) {
       <BackToTheTopPage />
       <AmazonInfo />
       <Buttons />
+      <AmazonAdvert />
     </>
   );
 }

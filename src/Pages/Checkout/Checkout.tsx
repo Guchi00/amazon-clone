@@ -8,6 +8,7 @@ import useLocalStorageState from "use-local-storage-state";
 import { NavBar } from "../../Components/Navigation/NavBar";
 import {
   Account,
+  AmazonAdvert,
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
@@ -208,6 +209,7 @@ export const Checkout = (props: INewCartsProps) => {
       <BackToTheTopPage />
       <AmazonInfo />
       <Buttons />
+      <AmazonAdvert />
     </div>
   );
 };

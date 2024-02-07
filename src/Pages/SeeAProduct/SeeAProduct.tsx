@@ -85,6 +85,7 @@ export const SeeAProduct = () => {
       <BackToTheTopPage />
       <AmazonInfo />
       <Buttons />
+      <AmazonInfo />
     </>
   );
 };

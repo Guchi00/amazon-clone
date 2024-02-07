@@ -13,6 +13,7 @@ import {
   Divider,
 } from "../Components/Footer";
 import { MultipleCarouselWatches } from "../Components/ProductsCards/MultipleCarousel/MultipleCarouselWatches";
+import { AmazonAdvert } from "../Components/Footer/AmazonAdvert";
 export const Home = () => {
   return (
     <div className={styles.home_page}>
@@ -27,6 +28,7 @@ export const Home = () => {
       <BackToTheTopPage />
       <AmazonInfo />
       <Buttons />
+      <AmazonAdvert />
     </div>
   );
 };

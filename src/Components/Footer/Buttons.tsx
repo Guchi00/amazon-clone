@@ -130,7 +130,7 @@ export const Buttons = () => {
 
   return (
     <>
-      <div className={styles.actionbtns_parent}>
+      <div className={styles.bottons_parent}>
         <a href="#top">
           <img
             className={styles.amazon_img}
