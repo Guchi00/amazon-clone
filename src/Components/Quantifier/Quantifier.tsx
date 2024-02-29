@@ -1,9 +1,6 @@
 import { useState } from "react";
 import useLocalStorageState from "use-local-storage-state";
-import {
-  INewCartsProps,
-  ProductProps,
-} from "../ProductsReusables/Products/Product";
+import { INewCartsProps } from "../ProductsReusables/Products/Product";
 import styles from "./styles.module.css";
 
 export type Operation = "decrease" | "increase";

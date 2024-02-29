@@ -35,18 +35,6 @@
   text-decoration: none;
   color: black;
 }
-/* 
-.image {
-  width: 100px;
-  height: 250px;
-  border: solid 1px;
-
-  > img {
-    width: 75%;
-    height: auto;
-    object-fit: contain;
-  }
-} */
 
 .see_more {
   height: 50px;

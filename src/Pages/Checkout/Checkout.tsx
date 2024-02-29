@@ -1,5 +1,5 @@
 import React, { useState, useMemo, ChangeEvent } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { message } from "antd";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { INewCartsProps } from "../../Components/ProductsReusables/Products/Product";
@@ -33,7 +33,6 @@ export type InitialUserInforStateType = {
 };
 
 export const Checkout = (props: INewCartsProps) => {
-  const navigate = useNavigate();
   const [cart, setCart] = useLocalStorageState<INewCartsProps>("cart" || {});
   const [userInfor, setUserInfor] = useState(initialUserInforState);
   const [key, setKey] = useState(0);

@@ -16,7 +16,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  /* border: solid 1px; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -26,22 +25,18 @@
     align-items: flex-start;
     justify-content: center;
     margin-top: 90px;
-    /* border: solid 1px; */
   }
 }
 
 .right_feature {
   width: 90%;
   height: 600px;
-  /* border: solid 1px; */
   display: flex;
   flex-direction: column;
 }
 
 @media only screen and (max-width: 600px) {
   .right_feature {
-    /* margin-bottom: 100px; */
-    /* border: solid 1px; */
     width: 80%;
     height: 500px;
   }
@@ -56,7 +51,6 @@
 @media only screen and (max-width: 600px) {
   .text_pay_with_card {
     font-size: 15px;
-    /* border: solid 1px; */
   }
 }
 
@@ -75,7 +69,6 @@
 .wrap {
   display: flex;
   flex-direction: column;
-  /* border: solid 1px; */
   margin-top: 25px;
 }
 
@@ -97,7 +90,6 @@
   width: 50%;
   border: solid 1px;
   border-radius: 7px;
-  /* margin-top: 5px; */
   border: solid 1px rgb(218, 214, 214);
   box-shadow: 0 4px 6px -6px #6a6868;
   padding-left: 15px;
@@ -241,7 +233,6 @@
 /* left styles */
 .left {
   width: 50%;
-  /* height: 850px; */
   border-left: solid 3px rgb(247, 247, 247);
   background-color: rgb(248, 248, 248);
   box-shadow: 0 4px 6px -6px #6a6868;
@@ -259,7 +250,6 @@
   width: 70%;
   display: flex;
   flex-direction: column;
-  /* border: solid 1px; */
   margin-top: 127px;
 }
 
@@ -323,9 +313,7 @@
 }
 
 .title_and_itemprice {
-  /* height: 100px; */
   width: 100%;
-  /* border: solid 1px; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -336,16 +324,13 @@
 @media only screen and (max-width: 600px) {
   .title_and_itemprice {
     width: 90%;
-    /* border: solid 1px; */
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 3px; */
   }
 }
 
 .product_title {
   width: 70%;
-  /* border: solid 1px; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -363,7 +348,6 @@
   .product_cost {
     margin-top: 10px;
     font-size: 13px;
-    /* margin-left: 70px; */
     font-weight: 600;
   }
 }
@@ -372,7 +356,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   height: 50px;
   width: 100%;
 }

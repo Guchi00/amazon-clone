@@ -1,6 +1,5 @@
 .parent_container {
   display: flex;
-  display: flex;
   flex-direction: column;
   margin: 5px;
 }
@@ -36,8 +35,6 @@
   margin-left: 10px;
   text-decoration: none;
   color: black;
-  /* font-family: "poppins", sans-serif; */
-  /* border: solid 1px; */
 }
 
 .product_title:hover {

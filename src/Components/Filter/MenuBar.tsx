@@ -129,9 +129,6 @@ const items: MenuProps["items"] = [
     ),
     key: "14",
   },
-  // {
-  //   type: "divider",
-  // },
   {
     label: (
       <Link to="/products" className={styles.items}>
@@ -144,11 +141,11 @@ const items: MenuProps["items"] = [
 
 export const MenuBar: React.FC = () => (
   <Dropdown menu={{ items }} trigger={["click"]}>
-    <a onClick={(e) => e.preventDefault()}>
+    <button onClick={(e) => e.preventDefault()} className={styles.b}>
       <Space className={styles.space}>
         <span className={styles.all}>All</span>
         <ArrowDropDownOutlinedIcon className={styles.arrow_icon} />
       </Space>
-    </a>
+    </button>
   </Dropdown>
 );

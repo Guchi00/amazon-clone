@@ -1,9 +1,8 @@
-import React, { useMemo, useState } from "react";
-import { Button, Divider, Popover, Segmented } from "antd";
+import React, { useMemo } from "react";
+import { Popover } from "antd";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import LanguageIcon from "@mui/icons-material/Language";
 import styles from "./styles.module.css";
-import { AlreadyACustomer } from "./AlreadyACustomer";
 
 const text = (
   <div className={styles.p}>
@@ -121,8 +120,8 @@ const content = (
 );
 
 export const Buttons = () => {
-  const [showArrow, setShowArrow] = React.useState(true);
-  const [arrowAtCenter, setArrowAtCenter] = React.useState(false);
+  const [showArrow] = React.useState(true);
+  const [arrowAtCenter] = React.useState(false);
 
   const mergedArrow = useMemo(() => {
     if (arrowAtCenter) return { pointAtCenter: true };

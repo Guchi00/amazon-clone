@@ -1,7 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import CheckIcon from "@mui/icons-material/Check";
-import CloseIcon from "@mui/icons-material/Close";
 import { AmazonAdvertItems } from "./AmazonAdvertItems";
 import data from "../../Data/amazonAdverts.json";
 import styles from "./styles.module.css";
