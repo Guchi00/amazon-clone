@@ -10,13 +10,38 @@
   align-items: self-start;
   height: 100px;
   width: 85%;
-  /* border: solid 1px; */
 }
+
+@media only screen and (max-width: 600px) {
+  .title_parent {
+    height: 70px;
+  }
+}
+
 .title {
   font-size: 30px;
   margin-top: 50px;
   font-weight: 500;
   color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .title {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .title {
+    font-size: 30px;
+  }
 }
 
 .middle_contents {
@@ -30,10 +55,55 @@
   border-right: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .middle_contents {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .middle_contents {
+    /* border: solid 1px red; */
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .middle_contents {
+    /* border: solid 1px red; */
+    width: 85%;
+  }
+}
+
 .img {
   height: 330px;
   width: 27%;
   /* border: solid 1px; */
+}
+
+@media only screen and (max-width: 600px) {
+  .img {
+    height: 250px;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .img {
+    height: 300px;
+    width: 40%;
+    /* border: solid 1px; */
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .img {
+    height: 330px;
+    width: 27%;
+  }
 }
 
 .contents {
@@ -43,11 +113,39 @@
   flex-direction: column;
 }
 
+@media only screen and (max-width: 600px) {
+  .contents {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .contents {
+    /* border: solid 1px green; */
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .contents {
+    width: 70%;
+  }
+}
+
 .product_title {
   width: 90%;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 20px;
+  font-family: "poppins", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .product_title {
+    font-size: 15px;
+  }
 }
 
 .product_title:hover {
@@ -57,6 +155,13 @@
 .cost {
   font-weight: 500;
   font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cost {
+    margin-right: 230px;
+    font-size: 15px;
+  }
 }
 
 .action {
@@ -69,6 +174,12 @@
   margin-left: 10px;
   font-weight: 600;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .action {
+    width: 295px;
+  }
 }
 
 .action:hover {

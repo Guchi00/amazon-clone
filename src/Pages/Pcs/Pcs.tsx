@@ -9,6 +9,7 @@ import {
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
+  UserConditionOfUse,
 } from "../../Components/Footer";
 
 export const Pcs = () => {
@@ -39,6 +40,7 @@ export const Pcs = () => {
       <AmazonInfo />
       <Buttons />
       <AmazonAdvert />
+      <UserConditionOfUse />
     </>
   );
 };

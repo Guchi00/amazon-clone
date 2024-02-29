@@ -11,6 +11,20 @@
   cursor: pointer;
 }
 
+@media only screen and (min-width: 601px) {
+  .parent {
+    margin-right: 10px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .parent {
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+}
+
 .parent:hover {
   border: solid 1px #fff;
 }
@@ -40,4 +54,21 @@
   font-size: 15px;
   font-weight: 800;
   margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .parent {
+    /* border: solid 1px; */
+    width: 35px;
+    color: rgb(191, 191, 191);
+    margin-right: 20px;
+    height: 35px;
+    margin-top: 7px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cart_text {
+    display: none;
+  }
 }

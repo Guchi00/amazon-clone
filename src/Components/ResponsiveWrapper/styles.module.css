@@ -1,0 +1,21 @@
+.mobile {
+  display: none;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile {
+    display: contents;
+  }
+}
+
+.desktop {
+  display: contents;
+}
+
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+    overflow: hidden;
+  }
+}

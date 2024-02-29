@@ -8,6 +8,7 @@ import {
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
+  UserConditionOfUse,
 } from "../../Components/Footer";
 import styles from "./styles.module.css";
 
@@ -39,6 +40,7 @@ export const ChildrenToys = () => {
       <AmazonInfo />
       <Buttons />
       <AmazonAdvert />
+      <UserConditionOfUse />
     </>
   );
 };

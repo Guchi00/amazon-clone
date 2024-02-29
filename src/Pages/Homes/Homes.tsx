@@ -9,6 +9,7 @@ import {
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
+  UserConditionOfUse,
 } from "../../Components/Footer";
 
 export const Homes = () => {
@@ -39,6 +40,7 @@ export const Homes = () => {
       <AmazonInfo />
       <Buttons />
       <AmazonAdvert />
+      <UserConditionOfUse />
     </>
   );
 };

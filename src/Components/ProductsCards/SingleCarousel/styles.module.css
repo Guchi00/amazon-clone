@@ -3,25 +3,104 @@ I just want to use it as a measure */
 
 .container {
   display: flex;
-  /* align-items: flex-end; */
-  justify-content: center;
+  justify-content: center !important;
+  align-items: center !important;
   /* height: 600px;   */
-
   /* position: relative; */
-  /* border: solid 1px  */
+  /* border: solid 1px; */
 }
 
-.box_content {
+.image_container {
   width: 90%;
   height: 700px;
   background-color: rgb(243, 241, 238);
-  /* border: solid 1px  */
+  /* border: solid 1px red; */
 }
 
-.image_contents {
+.image {
   width: 100%;
   height: 700px;
   cursor: pointer;
   object-fit: cover;
-  /* border: solid 1px  */
+  /* border: solid 1px green; */
 }
+
+/* SmallScreen */
+
+/* By default which is big screen, do not display */
+.con {
+  display: flex;
+  justify-content: center;
+  display: none;
+  /* position: relative; */
+}
+
+/* Display when it's small screen */
+@media only screen and (max-width: 600px) {
+  .con {
+    display: block !important;
+    height: 160px !important;
+  }
+}
+
+/* Display when it's middle screen from 601 - 1024 */
+@media only screen and (min-width: 601px) {
+  .con {
+    display: block !important;
+  }
+}
+
+/* Do not display from 1025 - up */
+@media only screen and (min-width: 1025px) {
+  .con {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    object-fit: contain;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .image {
+    object-fit: contain;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .image {
+    object-fit: cover;
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .container {
+    display: none !important;
+  }
+}
+
+/* Do not display when it's small screen. */
+/* @media only screen and (max-width: 600px) {
+  .container {
+    display: none !important;
+  }
+} */
+
+/* Do not display when it's a medium screen. */
+/* @media only screen and (min-width: 601px) {
+  .container {
+    display: none !important;
+  }
+} */
+
+/* Display on a big screen from 1025 and above */
+/* @media only screen and (min-width: 1025px) {
+  .container {
+    display: block !important;
+  }
+} */

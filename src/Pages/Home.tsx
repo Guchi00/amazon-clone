@@ -11,14 +11,18 @@ import {
   AmazonInfo,
   Buttons,
   Divider,
+  AmazonAdvert,
+  UserConditionOfUse,
 } from "../Components/Footer";
 import { MultipleCarouselWatches } from "../Components/ProductsCards/MultipleCarousel/MultipleCarouselWatches";
-import { AmazonAdvert } from "../Components/Footer/AmazonAdvert";
+import { SmallScreen } from "../Components/ProductsCards/SingleCarousel/SmallScreen";
+
 export const Home = () => {
   return (
     <div className={styles.home_page}>
       <NavBar />
       <SingleCarousel />
+      <SmallScreen />
       <DealsInCards />
       <NextDealsInCards />
       <MultipleCarouselHomes />
@@ -29,6 +33,7 @@ export const Home = () => {
       <AmazonInfo />
       <Buttons />
       <AmazonAdvert />
+      <UserConditionOfUse />
     </div>
   );
 };

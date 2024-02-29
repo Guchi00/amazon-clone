@@ -6,6 +6,14 @@
   margin: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .allcards {
+    width: 175px;
+    height: 230px;
+    margin: 5px;
+  }
+}
+
 .cards_title {
   margin-left: 15px;
   margin-top: 20px;
@@ -13,6 +21,13 @@
   font-weight: 700;
 }
 
+@media only screen and (max-width: 600px) {
+  .cards_title {
+    font-weight: 500;
+    font-size: 10px;
+    /* margin: 20px; */
+  }
+}
 .cards_image {
   display: flex;
   align-items: center;
@@ -28,9 +43,26 @@
   font-weight: 600;
 }
 
+@media only screen and (max-width: 600px) {
+  .cards_action {
+    font-weight: 500;
+    font-size: 10px;
+    margin: 7px;
+  }
+}
+
 .image {
   > img {
     width: 318px;
     height: 330px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    > img {
+      width: 150px;
+      height: 150px;
+    }
   }
 }

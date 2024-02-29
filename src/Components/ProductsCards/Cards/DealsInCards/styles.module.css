@@ -10,10 +10,25 @@
   margin: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .allcards_first_diff_one {
+    width: 175px;
+    height: 230px;
+    margin: 5px;
+  }
+}
+
 .title {
   font-weight: 700;
   font-size: 22px;
   margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-weight: 500;
+    font-size: 10px;
+  }
 }
 
 .sub_title {
@@ -43,6 +58,13 @@
   font-weight: 500;
 }
 
+@media only screen and (max-width: 600px) {
+  .see_more {
+    margin-top: 7px;
+    font-size: 10px;
+  }
+}
+
 .see_more:hover {
   color: rgb(199, 81, 31);
 }
@@ -50,13 +72,48 @@
 /*And this is for the GameAccessoriesCard and the DealsInCards. Container/Parent.*/
 .parent {
   display: flex;
-  /* align-items: flex-end; */
   justify-content: center;
   height: 460px;
-  /* border:  solid 1px; */
   position: absolute;
   top: 400px;
   left: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 280px;
+    left: 0px;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 380px;
+    left: 0px;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .parent {
+    display: flex;
+    justify-content: center;
+    height: 460px;
+    position: absolute;
+    top: 400px;
+    /* left: 100px; */
+  }
 }
 
 .action_link {

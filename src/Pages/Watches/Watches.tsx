@@ -7,6 +7,7 @@ import {
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
+  UserConditionOfUse,
 } from "../../Components/Footer";
 import watchData from "../../Data/watches.json";
 import styles from "./styles.module.css";
@@ -39,6 +40,7 @@ export const Watches = () => {
       <AmazonInfo />
       <Buttons />
       <AmazonAdvert />
+      <UserConditionOfUse />
     </>
   );
 };

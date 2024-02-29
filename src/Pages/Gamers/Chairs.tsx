@@ -6,6 +6,7 @@ import {
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
+  UserConditionOfUse,
 } from "../../Components/Footer";
 import chairs from "../../Data/chairs.json";
 import styles from "./styles.module.css";
@@ -38,6 +39,7 @@ export const Chairs = () => {
       <AmazonInfo />
       <Buttons />
       <AmazonAdvert />
+      <UserConditionOfUse />
     </>
   );
 };
