@@ -1,6 +1,5 @@
-import React, { useMemo, useState } from "react";
-import { Button, Divider, Popover, Segmented } from "antd";
-import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
+import React, { useMemo } from "react";
+import { Popover } from "antd";
 import styles from "./styles.module.css";
 
 const text = (
@@ -160,8 +159,8 @@ const content = (
 );
 
 export const Language: React.FC = () => {
-  const [showArrow, setShowArrow] = React.useState(true);
-  const [arrowAtCenter, setArrowAtCenter] = React.useState(false);
+  const [showArrow] = React.useState(true);
+  const [arrowAtCenter] = React.useState(false);
 
   const mergedArrow = useMemo(() => {
     if (arrowAtCenter) return { pointAtCenter: true };
@@ -183,7 +182,6 @@ export const Language: React.FC = () => {
             className={styles.us_flag}
           />
           <span className={styles.en}>EN</span>
-          {/* <ArrowDropDownOutlinedIcon className={styles.arrowdownIcon} /> */}
         </div>
       </Popover>
     </>

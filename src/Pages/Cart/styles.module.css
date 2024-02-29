@@ -85,7 +85,7 @@
   border: solid 1px #dddddd;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   border-left: 0px;
   border-right: 0px;
 }

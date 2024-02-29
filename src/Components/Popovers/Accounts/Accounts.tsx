@@ -1,7 +1,6 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
-import { Button, Divider, Popover, Segmented } from "antd";
-import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
+import { Popover } from "antd";
 import styles from "./styles.module.css";
 
 const text = (
@@ -24,34 +23,55 @@ const content = (
   <div className={styles.content}>
     <div className={styles.left_content}>
       <span className={styles.your_list}>Your Lists</span>
-      <a className={styles.left_content_a}>Create a list</a>
-      <a
-        className={styles.left_content_a}
-        href="https://www.amazon.com/registries?ref_=nav_ListFlyout_find"
-      >
+      <Link to="" className={styles.left_content_a}>
+        Create a list
+      </Link>
+      <Link to="" className={styles.left_content_a}>
         Find a list or Registry
-      </a>
+      </Link>
     </div>
     <div className={styles.right_content}>
       <span className={styles.your_account}>Your Account</span>
-      <a className={styles.right_content_a}>Account</a>
-      <a className={styles.right_content_a}>Orders</a>
-      <a className={styles.right_content_a}>Recommendations</a>
-      <a className={styles.right_content_a}>Browsing history</a>
-      <a className={styles.right_content_a}>Watchlist</a>
-      <a className={styles.right_content_a}>Video purchases & Rentals</a>
-      <a className={styles.right_content_a}>Kindle Unlimited</a>
-      <a className={styles.right_content_a}>Content & Devices</a>
-      <a className={styles.right_content_a}>Subscribe and Save Item</a>
-      <a className={styles.right_content_a}>Memberships & Subscriptions</a>
-      <a className={styles.right_content_a}>Music Library</a>
+      <Link to="" className={styles.right_content_a}>
+        Account
+      </Link>
+      <Link to="" className={styles.right_content_a}>
+        Orders
+      </Link>
+      <Link to="" className={styles.right_content_a}>
+        Recommendations
+      </Link>
+      <Link to="" className={styles.right_content_a}>
+        Browsing history
+      </Link>
+      <Link to="" className={styles.right_content_a}>
+        Watchlist
+      </Link>
+      <Link to="" className={styles.right_content_a}>
+        Video purchases & Rentals
+      </Link>
+      <Link to="" className={styles.right_content_a}>
+        Kindle Unlimited
+      </Link>
+      <Link to="" className={styles.right_content_a}>
+        Content & Devices
+      </Link>
+      <Link to="" className={styles.right_content_a}>
+        Subscribe and Save Item
+      </Link>
+      <Link to="" className={styles.right_content_a}>
+        Memberships & Subscriptions
+      </Link>
+      <Link to="" className={styles.right_content_a}>
+        Music Library
+      </Link>
     </div>
   </div>
 );
 
 export function Accounts() {
-  const [showArrow, setShowArrow] = React.useState(true);
-  const [arrowAtCenter, setArrowAtCenter] = React.useState(false);
+  const [showArrow] = React.useState(true);
+  const [arrowAtCenter] = React.useState(false);
 
   const mergedArrow = useMemo(() => {
     if (arrowAtCenter) return { pointAtCenter: true };
@@ -70,7 +90,6 @@ export function Accounts() {
           <div className={styles.holder}>
             <span className={styles.hello_signin}>Hello, Sign in</span>
             <span className={styles.account_and_list}>Account & List</span>
-            {/* <ArrowDropDownOutlinedIcon className={styles.arrowdownIcon} /> */}
           </div>
         </Link>
       </Popover>

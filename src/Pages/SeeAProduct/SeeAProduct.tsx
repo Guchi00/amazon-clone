@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { message } from "antd";
 import useLocalStorageState from "use-local-storage-state";
 import { INewCartsProps } from "../../Components/ProductsReusables/Products/Product";

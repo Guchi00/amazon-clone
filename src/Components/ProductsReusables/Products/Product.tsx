@@ -1,6 +1,6 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import useLocalStorageState from "use-local-storage-state";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { message } from "antd";
 import { FormateCurrency } from "../../../Utilities/FormateCurrency";
 import styles from "./styles.module.css";

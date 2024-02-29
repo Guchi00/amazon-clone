@@ -1,5 +1,4 @@
 import React from "react";
-import { Button, Modal } from "antd";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import { LocationModal } from "../Modals/LocationModal";
 import styles from "./styles.module.css";

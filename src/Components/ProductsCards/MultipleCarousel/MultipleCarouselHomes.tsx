@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,7 +11,6 @@ import { Grid } from "antd";
 const { useBreakpoint } = Grid;
 export const MultipleCarouselHomes = () => {
   const breakpoints = useBreakpoint();
-  const slideToShowAndScroll = breakpoints.xs ? 2 : 6;
 
   console.log(breakpoints, "break pints");
   const settings = {
@@ -80,15 +79,3 @@ export const MultipleCarouselHomes = () => {
     </div>
   );
 };
-
-// useMemo(() => {
-//   if (breakpoints.xs || breakpoints.sm) {
-//     return 2;
-//   } else if (breakpoints.md) {
-//     return 3;
-//   } else if (breakpoints.lg) {
-//     return 4;
-//   } else {
-//     return 6;
-//   }
-// }, [breakpoints]);

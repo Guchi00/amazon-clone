@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import type { DrawerProps, RadioChangeEvent } from "antd";
-import { Button, Divider, Drawer, Radio, Space } from "antd";
+import type { DrawerProps } from "antd";
+import { Button, Drawer, Space } from "antd";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import styles from "./styles.module.css";
 import { UserAccount } from "./UserAccount";
@@ -9,7 +9,7 @@ import { ResponsiveWrapper } from "../ResponsiveWrapper/ResponsiveWrapper";
 
 export const DrawerMenu: React.FC = () => {
   const [open, setOpen] = useState(false);
-  const [placement, setPlacement] = useState<DrawerProps["placement"]>("left");
+  const [placement] = useState<DrawerProps["placement"]>("left");
 
   const showDrawer = () => {
     setOpen(true);
@@ -19,19 +19,9 @@ export const DrawerMenu: React.FC = () => {
     setOpen(false);
   };
 
-  const onChange = (e: RadioChangeEvent) => {
-    setPlacement(e.target.value);
-  };
-
   return (
     <>
       <Space>
-        {/* <Radio.Group value={placement} onChange={onChange}>
-          <Radio value="top">top</Radio>
-          <Radio value="right">right</Radio>
-          <Radio value="bottom">bottom</Radio>
-          <Radio value="left">left</Radio>
-        </Radio.Group> */}
         <Button
           type="primary"
           onClick={showDrawer}
@@ -45,7 +35,6 @@ export const DrawerMenu: React.FC = () => {
         </Button>
       </Space>
       <Drawer
-        // title="Basic Drawer"
         placement={placement}
         closable={false}
         onClose={onClose}

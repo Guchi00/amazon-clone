@@ -10,15 +10,15 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (max-width: 1024px) {
   .holder {
     margin-top: 40px;
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (max-width: 600px) {
   .holder {
-    margin-top: 5px !important;
+    display: none;
   }
 }
 
@@ -137,10 +137,4 @@
 .right_content_a:hover {
   color: rgb(199, 81, 31);
   text-decoration-line: underline;
-}
-
-@media only screen and (max-width: 600px) {
-  .holder {
-    display: none;
-  }
 }

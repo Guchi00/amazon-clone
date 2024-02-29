@@ -5,9 +5,6 @@ I just want to use it as a measure */
   display: flex;
   justify-content: center !important;
   align-items: center !important;
-  /* height: 600px;   */
-  /* position: relative; */
-  /* border: solid 1px; */
 }
 
 .image_container {
@@ -83,24 +80,3 @@ I just want to use it as a measure */
     display: none !important;
   }
 }
-
-/* Do not display when it's small screen. */
-/* @media only screen and (max-width: 600px) {
-  .container {
-    display: none !important;
-  }
-} */
-
-/* Do not display when it's a medium screen. */
-/* @media only screen and (min-width: 601px) {
-  .container {
-    display: none !important;
-  }
-} */
-
-/* Display on a big screen from 1025 and above */
-/* @media only screen and (min-width: 1025px) {
-  .container {
-    display: block !important;
-  }
-} */

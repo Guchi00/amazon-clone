@@ -1,5 +1,5 @@
-import React, { useState, ChangeEvent, useRef, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState, ChangeEvent } from "react";
+import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 import styles from "./styles.module.css";
@@ -17,7 +17,6 @@ export interface INewSearchBarType {
 }
 
 export const SearchBar = (props: INewSearchBarType) => {
-  const navigate = useNavigate();
   const [filteredData, setFilteredData] = useState<INewSearchBarType["data"]>(
     []
   );

@@ -17,10 +17,9 @@ export const Signin = () => {
   const navigate = useNavigate();
   const [userInput, setUserInput] =
     useState<InitialStateTypes>(InitialRegisterState);
-  const [existingUsers, setExistingUsers] = useLocalStorageState<string[]>(
-    "existingUsers",
-    { defaultValue: [] }
-  );
+  const [existingUsers] = useLocalStorageState<string[]>("existingUsers", {
+    defaultValue: [],
+  });
 
   const handleSignIn = () => {
     if (userInput.email === "") {

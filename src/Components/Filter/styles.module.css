@@ -1,4 +1,4 @@
-.space {
+.b {
   width: 50px;
   height: 42px;
   border: solid 1px;
@@ -12,22 +12,36 @@
   display: flex !important;
 }
 
+.space {
+  width: 50px;
+  height: 42px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+  display: flex !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .b {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .b {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .space {
+    display: none !important;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .space {
     display: none !important;
-  }
-}
-
-@media only screen and (min-width: 601px) {
-  .space {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .space {
-    display: block !important;
-    display: flex !important;
   }
 }
 
