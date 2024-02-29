@@ -13,6 +13,7 @@ import {
   BackToTheTopPage,
   Buttons,
   Divider,
+  UserConditionOfUse,
 } from "../../Components/Footer";
 import { TotalPrice } from "../../Components/TotalPrice/TotalPrice";
 import { FormateCurrency } from "../../Utilities/FormateCurrency";
@@ -210,6 +211,7 @@ export const Checkout = (props: INewCartsProps) => {
       <AmazonInfo />
       <Buttons />
       <AmazonAdvert />
+      <UserConditionOfUse />
     </div>
   );
 };

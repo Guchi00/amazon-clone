@@ -9,10 +9,28 @@
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 600px) {
+  .products_parent {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    height: 280px;
+  }
+}
+
 .image {
   > img {
     height: 250px;
     width: 160px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    > img {
+      height: 180px !important;
+      width: 180px;
+    }
   }
 }
 
@@ -29,4 +47,10 @@
   font-weight: 500;
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 13px;
+  }
 }

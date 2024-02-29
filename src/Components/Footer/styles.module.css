@@ -11,6 +11,32 @@
   border: solid 1px #dddddd;
 }
 
+@media only screen and (max-width: 600px) {
+  .user_signup_parent_div {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .user_signup_parent_div {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .user_signup_parent_div {
+    height: 130px;
+    width: 100%;
+    border: solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border: solid 1px #dddddd;
+  }
+}
+
 .personalize_recon {
   font-size: 13px;
   font-weight: 500;
@@ -65,7 +91,6 @@
 /* For InformationItems */
 .data_box {
   width: 300px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -73,9 +98,22 @@
   margin-top: 35px;
 }
 
+@media only screen and (max-width: 600px) {
+  .data_box {
+    width: 50%;
+    margin-top: 0px;
+  }
+}
+
 .wrap {
   width: 220px;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrap {
+    width: 160px;
+  }
 }
 
 .title {
@@ -83,11 +121,23 @@
   color: #fff;
 }
 
+@media only screen and (max-width: 600px) {
+  .title {
+    display: none;
+  }
+}
+
 .subtitle {
   font-size: 15px;
   color: #ddd;
   font-weight: 500;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .subtitle {
+    font-size: 13px;
+  }
 }
 
 .subtitle:hover {
@@ -103,6 +153,35 @@
   justify-content: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .parent {
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .parent {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .parent {
+    height: 370px;
+    width: 100%;
+    background-color: rgb(34, 48, 62);
+    display: flex;
+    justify-content: center;
+  }
+}
 /* For Buttons */
 .bottons_parent {
   height: 100px;
@@ -116,12 +195,25 @@
   justify-content: center;
 }
 
-.amazon_img {
+@media only screen and (max-width: 600px) {
+  .bottons_parent {
+    background-color: rgb(19, 26, 34);
+    border: 0 !important;
+  }
+}
+
+.amazon_logo_img {
   height: 22px;
   width: 82px;
   margin-right: 90px;
   margin-top: 15px;
   margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .amazon_logo_img {
+    display: none;
+  }
 }
 
 .p {
@@ -140,23 +232,45 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 5px;
+  > .en {
+    color: rgb(204, 204, 204);
+    font-weight: 600;
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  > .globe_icon {
+    font-size: 16px !important;
+    color: #fff;
+    margin-right: 10px;
+  }
 }
 
-.globe_icon {
-  height: 15px !important;
-  color: #fff;
-}
-
-.en {
-  color: rgb(204, 204, 204);
-  font-weight: 600;
-  font-size: 13px;
-  margin-right: 10px;
+@media only screen and (max-width: 600px) {
+  .language_option {
+    background-color: rgb(19, 26, 34);
+    border: 0;
+    margin-left: 0px;
+    > .en {
+      color: rgb(204, 204, 204);
+      font-size: 12px;
+      font-weight: 500;
+    }
+    > .globe_icon {
+      font-size: 13px !important;
+      margin-right: 8px;
+    }
+  }
 }
 
 .arrow_up_icon {
   color: rgb(102, 102, 102);
   font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .arrow_up_icon {
+    display: none !important;
+  }
 }
 
 .change_language {
@@ -201,6 +315,28 @@
   font-weight: 600;
   background-color: rgb(34, 48, 62);
   margin-bottom: 5px;
+  > .dollar_sign {
+    color: white;
+    font-weight: 500px;
+    font-size: 14px;
+    margin-right: 7px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dollar_btn {
+    background-color: rgb(19, 26, 34);
+    border: 0;
+    margin-left: 0px;
+    color: rgb(204, 204, 204);
+    font-size: 12px;
+    font-weight: 500;
+    > .dollar_sign {
+      font-weight: 500px;
+      font-size: 12px;
+      margin-right: 3px;
+    }
+  }
 }
 
 .united_state_btn {
@@ -218,12 +354,27 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 5px;
+  > .us_flag {
+    width: 18px;
+    height: 11px;
+    margin-right: 8px;
+  }
 }
 
-.us_flag {
-  width: 18px;
-  height: 11px;
-  margin-right: 7px;
+@media only screen and (max-width: 600px) {
+  .united_state_btn {
+    background-color: rgb(19, 26, 34);
+    border: 0;
+    margin-left: 0px;
+    color: rgb(204, 204, 204);
+    font-size: 12px;
+    font-weight: 500;
+    .us_flag {
+      width: 15px;
+      height: 10px;
+      margin-right: 6px;
+    }
+  }
 }
 
 .divider {
@@ -235,15 +386,6 @@
 }
 
 /* AmazonAdvert */
-.parent_div {
-  height: 470px;
-  width: 100%;
-  background-color: rgb(19, 26, 34);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .wrapper {
   height: 400px;
   width: 100%;
@@ -251,14 +393,34 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  /* border: solid 1px red; */
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: none;
+  }
 }
 
 .row {
-  height: 450px;
+  height: 400px;
   width: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: solid 1px; */
+}
+
+@media only screen and (min-width: 601px) {
+  .wrapper {
+    height: 480px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    height: 400px;
+  }
 }
 
 .adverts {
@@ -284,6 +446,25 @@
   text-decoration: underline;
 }
 
+/* user condition of use*/
+.parent_div_user_condition {
+  height: 70px;
+  width: 100%;
+  background-color: rgb(19, 26, 34);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  .parent_div_user_condition {
+    height: 110px;
+    font-size: 10px;
+    color: #ddd;
+    font-weight: 500;
+  }
+}
+
 .terms_and_conditions {
   width: 100%;
   display: flex;
@@ -291,12 +472,20 @@
   justify-content: center;
 }
 
-.last_links {
+.link_terms_and_condition {
   text-decoration: none;
   color: rgb(221, 221, 221);
   font-size: 13px;
   margin-left: 10px;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .link_terms_and_condition {
+    font-size: 10px;
+    color: #ddd;
+    font-weight: 500;
+  }
 }
 
 .rules {
@@ -310,29 +499,64 @@
   align-items: center;
   justify-content: space-around;
   margin-left: 5px;
+  > .check {
+    font-size: 12px !important;
+    border: solid 1px #0067ff;
+    background-color: #fff;
+    color: #0067ff;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+  > .close {
+    font-size: 12px !important;
+    background-color: #0067ff;
+    color: rgb(221, 221, 221);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
 }
 
-.check {
-  font-size: 12px !important;
-  border: solid 1px #0067ff;
-  background-color: #fff;
-  color: #0067ff;
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
+@media only screen and (max-width: 600px) {
+  .rules {
+    width: 23px;
+    > .check {
+      font-size: 10px !important;
+    }
+    > .close {
+      font-size: 10px !important;
+    }
+  }
 }
 
-.close {
-  font-size: 12px !important;
-  background-color: #0067ff;
-  color: rgb(221, 221, 221);
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
-}
-
-.at {
+.at_amazon_dot_com {
   color: rgb(221, 221, 221);
   font-size: 12px;
   margin-left: 15px;
   font-weight: 600;
   margin-top: 7px;
+}
+
+@media only screen and (max-width: 600px) {
+  .at_amazon_dot_com {
+    font-size: 9px;
+    font-weight: 500;
+    color: #ddd;
+  }
+}
+
+.customer_sign_in {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .customer_sign_in {
+    display: block;
+    background-color: rgb(19, 26, 34);
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    border: 0px !important;
+  }
 }

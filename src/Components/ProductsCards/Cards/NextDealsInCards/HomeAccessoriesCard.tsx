@@ -48,13 +48,13 @@ export function HomeAccessoriesCard() {
             marginLeft: "30px",
           }}
         >
-          {data.map((items) => (
+          {data.map((item) => (
             <HomeAccessoriesCardItems
-              key={items.subTitle}
-              image={<img src={items.imageUrl} alt={"images"} />}
+              key={item.subTitle}
+              image={<img src={item.imageUrl} alt={"images"} />}
               subTitle={
-                <Link to={items.subTitleUrl} className={styles.subTitle_link}>
-                  {items.subTitle}
+                <Link to={item.subTitleUrl} className={styles.subTitle_link}>
+                  {item.subTitle}
                 </Link>
               }
             />

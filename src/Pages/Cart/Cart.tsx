@@ -17,6 +17,7 @@ import {
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
+  UserConditionOfUse,
 } from "../../Components/Footer";
 
 import styles from "./styles.module.css";
@@ -114,6 +115,10 @@ export function Cart(props: INewCartsProps) {
 
                 <div className={styles.middle_contents}>
                   <span className={styles.title}>{product.title}</span>
+
+                  <span className={styles.product_price_smallscreen}>
+                    {FormateCurrency(product.cost)}
+                  </span>
                   <div className={styles.action}>
                     <Quantifier
                       removeProductCallback={() =>
@@ -166,6 +171,7 @@ export function Cart(props: INewCartsProps) {
       <AmazonInfo />
       <Buttons />
       <AmazonAdvert />
+      <UserConditionOfUse />
     </>
   );
 }

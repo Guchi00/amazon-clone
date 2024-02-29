@@ -6,6 +6,7 @@ import {
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
+  UserConditionOfUse,
 } from "../../Components/Footer";
 import computerMices from "../../Data/computerMices.json";
 import styles from "./styles.module.css";
@@ -38,6 +39,7 @@ export function ComputersMices() {
       <AmazonInfo />
       <Buttons />
       <AmazonAdvert />
+      <UserConditionOfUse />
     </>
   );
 }

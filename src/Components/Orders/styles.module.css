@@ -27,3 +27,21 @@
   font-size: 14px;
   font-weight: 800;
 }
+
+@media only screen and (max-width: 600px) {
+  .link_to_checkout {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .link_to_checkout {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .link_to_checkout {
+    display: block;
+  }
+}

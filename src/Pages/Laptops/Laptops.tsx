@@ -7,6 +7,7 @@ import {
   AmazonInfo,
   BackToTheTopPage,
   Buttons,
+  UserConditionOfUse,
 } from "../../Components/Footer";
 import laptopData from "../../Data/laptop.json";
 import styles from "./styles.module.css";
@@ -39,6 +40,7 @@ export const Laptops = () => {
       <AmazonInfo />
       <Buttons />
       <AmazonAdvert />
+      <UserConditionOfUse />
     </>
   );
 };

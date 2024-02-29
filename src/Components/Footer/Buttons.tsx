@@ -3,6 +3,7 @@ import { Button, Divider, Popover, Segmented } from "antd";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import LanguageIcon from "@mui/icons-material/Language";
 import styles from "./styles.module.css";
+import { AlreadyACustomer } from "./AlreadyACustomer";
 
 const text = (
   <div className={styles.p}>
@@ -129,51 +130,39 @@ export const Buttons = () => {
   }, [showArrow, arrowAtCenter]);
 
   return (
-    <>
-      <div className={styles.bottons_parent}>
-        <a href="#top">
-          <img
-            className={styles.amazon_img}
-            src="https://companieslogo.com/img/orig/AMZN_BIG.D-8fb0be81.png?t=1632523695"
-            alt="amazonlogo"
-          />
-        </a>
+    <div className={styles.bottons_parent}>
+      <a href="#top">
+        <img
+          className={styles.amazon_logo_img}
+          src="https://companieslogo.com/img/orig/AMZN_BIG.D-8fb0be81.png?t=1632523695"
+          alt="amazonlogo"
+        />
+      </a>
 
-        <Popover
-          placement="bottomRight"
-          title={text}
-          content={content}
-          arrow={mergedArrow}
-        >
-          <button className={styles.language_option}>
-            <LanguageIcon className={styles.globe_icon} />
-            <span className={styles.en}>English</span>
-            <ArrowDropUpIcon className={styles.arrow_up_icon} />
-          </button>
-        </Popover>
+      <Popover
+        placement="bottomRight"
+        title={text}
+        content={content}
+        arrow={mergedArrow}
+      >
+        <button className={styles.language_option}>
+          <LanguageIcon className={styles.globe_icon} />
+          <span className={styles.en}>English</span>
+          <ArrowDropUpIcon className={styles.arrow_up_icon} />
+        </button>
+      </Popover>
 
-        <button className={styles.dollar_btn}>
-          <span
-            style={{
-              color: "white",
-              fontWeight: "600",
-              fontSize: "14px",
-              marginRight: "7px",
-            }}
-          >
-            $
-          </span>{" "}
-          USD - U.S. Dollar
-        </button>
-        <button className={styles.united_state_btn}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_the_United_States_%281912-1959%29.svg/800px-Flag_of_the_United_States_%281912-1959%29.svg.png"
-            alt="usa-flag"
-            className={styles.us_flag}
-          />
-          United State
-        </button>
-      </div>
-    </>
+      <button className={styles.dollar_btn}>
+        <span className={styles.dollar_sign}>$</span> USD - U.S. Dollar
+      </button>
+      <button className={styles.united_state_btn}>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_the_United_States_%281912-1959%29.svg/800px-Flag_of_the_United_States_%281912-1959%29.svg.png"
+          alt="usa-flag"
+          className={styles.us_flag}
+        />
+        United State
+      </button>
+    </div>
   );
 };

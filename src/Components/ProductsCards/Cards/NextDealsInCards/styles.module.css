@@ -10,10 +10,25 @@
   margin: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .allcards_first_diff_one {
+    width: 175px;
+    height: 230px;
+    margin: 5px;
+  }
+}
+
 .title {
   font-weight: 700;
   font-size: 22px;
   margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-weight: 500;
+    font-size: 10px;
+  }
 }
 
 .subTitle_link {
@@ -35,14 +50,54 @@
   color: rgb(199, 81, 31);
 }
 
+@media only screen and (max-width: 600px) {
+  .see_more {
+    margin-top: 7px;
+    font-size: 10px;
+  }
+}
+
 /*And this is for the HomeAccessoriesCard and the NextDealsInCards Container/Parent*/
 .parent {
   display: flex;
-  /* align-items: flex-end; */
   justify-content: center;
   height: 460px;
-  /* border:  solid 1px; */
   margin-top: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 450px;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 790px;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .parent {
+    display: flex;
+    justify-content: center;
+    height: 460px;
+    margin-top: 70px;
+  }
 }
 
 .action_link {

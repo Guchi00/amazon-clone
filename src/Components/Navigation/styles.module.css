@@ -1,3 +1,20 @@
+.container {
+  height: 100px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 170px;
+  }
+}
+
 .parent {
   position: fixed;
   z-index: 50;
@@ -9,31 +26,180 @@
   height: 60px;
   width: 100%;
   display: flex;
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+  .first_nav {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .first_nav {
+    height: 130px;
+    position: relative;
+    /* z-index: -1 !important; */
+  }
 }
 
 .second_nav {
   background-color: rgb(34, 48, 62);
   height: 40px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  /* z-index: -1; */
+}
+
+@media only screen and (max-width: 600px) {
+  .second_nav {
+    position: relative;
+    /* z-index: -1 !important; */
+  }
+}
+
+.second_nav_links {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .second_nav_links {
+    background-color: rgb(19, 25, 33);
+    height: 20px;
+    color: rgb(220, 220, 220);
+    font-size: 12px;
+    color: rgb(220, 220, 220);
+    font-weight: 400;
+    margin-left: 0;
+    position: absolute;
+    top: -27px;
+  }
+}
+
+.btn_todays_deal {
+  height: 40px;
+  width: 100px;
+  background-color: rgb(34, 48, 62);
+  border: 0;
+  cursor: pointer;
+  color: white;
+  border-radius: 2px;
+}
+
+.btn_todays_deal:hover {
+  border: solid 1px white !important;
+}
+
+.btn_sell {
+  height: 40px;
+  width: 50px;
+  background-color: rgb(34, 48, 62);
+  border: 0;
+  cursor: pointer;
+  color: white;
+  border-radius: 2px;
+}
+
+.btn_sell:hover {
+  border: solid 1px white !important;
+}
+
+.btn_customer_service {
+  height: 40px;
+  width: 135px;
+  background-color: rgb(34, 48, 62);
+  border: 0;
+  cursor: pointer;
+  color: white;
+  border-radius: 2px;
+}
+
+.btn_customer_service:hover {
+  border: solid 1px white !important;
 }
 
 .amazon_logo {
   height: 30px;
   cursor: pointer;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 601px) {
+  .amazon_logo {
+    width: 80px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .amazon_logo {
+    height: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
 }
 
 .parent_amazon_logo {
   height: 47px;
   width: 120px;
-  /* border: solid 1px; */
-  margin-left: 18px;
+  margin-left: 16px;
   margin-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+@media only screen and (min-width: 601px) {
+  .parent_amazon_logo {
+    margin-right: 10px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .parent_amazon_logo {
+    margin-top: 5px;
+    margin-right: 16px;
+  }
+}
+
 .parent_amazon_logo:hover {
   border: solid 1px white;
   border-radius: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn_todays_deal {
+    width: 73px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn_sell {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn_customer_service {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .amazon_logo {
+    height: 20px;
+    margin-bottom: 7px;
+  }
 }

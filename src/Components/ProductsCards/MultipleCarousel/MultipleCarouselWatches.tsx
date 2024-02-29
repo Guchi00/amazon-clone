@@ -14,9 +14,30 @@ export const MultipleCarouselWatches = () => {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 6,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          // dots: true,
+          arrows: false,
+        },
+      },
+    ],
   };
   return (
-    <div className={styles.container}>
+    <div className={styles.container_watches}>
       <div className={styles.product_wrapper}>
         <span className={styles.additional_items}>
           Additional items to explore{" "}
@@ -28,7 +49,13 @@ export const MultipleCarouselWatches = () => {
           {carouselWatchData.map((product) => (
             <CarouselMultiple
               key={product.id}
-              image={<img src={product.imageUrl} alt="carousel_image" />}
+              image={
+                <img
+                  src={product.imageUrl}
+                  alt="carousel_image"
+                  className={styles.carousel_image_watches}
+                />
+              }
               id={product.id}
             />
           ))}
