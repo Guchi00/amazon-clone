@@ -153,7 +153,7 @@ export const Buttons = () => {
       </Popover>
 
       <button className={styles.dollar_btn}>
-        <span className={styles.dollar_sign}>$</span> USD - U.S. Dollar
+        <span className={styles.dollar_sign}>$</span> USD - U.S Dollar
       </button>
       <button className={styles.united_state_btn}>
         <img
