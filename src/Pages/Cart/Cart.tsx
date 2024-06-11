@@ -1,7 +1,6 @@
 import useLocalStorageState from "use-local-storage-state";
 import { useNavigate } from "react-router-dom";
 import { message } from "antd";
-
 import { NavBar } from "../../Components/Navigation/NavBar";
 import { INewCartsProps } from "../../Components/ProductsReusables/Products/Product";
 import { Quantifier, Operation } from "../../Components/Quantifier/Quantifier";

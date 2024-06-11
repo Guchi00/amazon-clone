@@ -24,13 +24,13 @@ export const Chairs = () => {
             Price and other details may vary based on products price and color.
           </span>
         </div>
-        {chairs.map((items) => (
+        {chairs.map((item) => (
           <Product
-            key={items.id}
-            id={items.id}
-            image={items.imageUrl}
-            title={items.title}
-            cost={items.cost}
+            key={item.id}
+            id={item.id}
+            image={item.imageUrl}
+            title={item.title}
+            cost={item.cost}
           />
         ))}
       </div>
