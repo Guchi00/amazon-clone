@@ -30,7 +30,7 @@ export const SingleCarousel = () => {
         >
           <Link to="/games">
             <img
-              src="https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61CiqVTRBEL._SX3000_.jpg"
+              src="https://res.cloudinary.com/dxqpyyc4w/image/upload/v1718086453/Amazon-Assets/game-asset_iuyxeo.jpg"
               alt="essential_for_gamers_image"
               className={styles.image}
             />
