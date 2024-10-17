@@ -30,57 +30,45 @@ export const SingleCarousel = () => {
         >
           <Link to="/games">
             <img
-              src="https://res.cloudinary.com/dxqpyyc4w/image/upload/v1718086453/Amazon-Assets/game-asset_iuyxeo.jpg"
-              alt="essential_for_gamers_image"
+              src="game.jpg"
+              alt="essential for gamers"
               className={styles.image}
             />
           </Link>
 
           <Link to="/homes">
             <img
-              src="https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71NqG9bBp7L._SX3000_.jpg"
-              alt="lunar_for_new_year_image"
+              src="new-year-deal.jpg"
+              alt="new year deals"
               className={styles.image}
             />
           </Link>
 
           <Link to="/toys">
-            <img
-              src="https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81KkrQWEHIL._SX3000_.jpg"
-              alt="children_toys_image"
-              className={styles.image}
-            />
+            <img src="toys.jpg" alt="children toys" className={styles.image} />
           </Link>
 
           <Link to="/beauty">
             <img
-              src="https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61zAjw4bqPL._SX3000_.jpg"
+              src="beauty.jpg"
               className={styles.image}
-              alt="beauty_image_product"
+              alt="beauty products"
             />
           </Link>
 
           <Link to="/kitchen">
             <img
-              src="https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61lwJy4B8PL._SX3000_.jpg"
+              src="kitchen-favourite.jpg"
               className={styles.image}
-              alt="kitchen_image_product"
+              alt="kitchen products"
             />
           </Link>
 
-          <Link to="/">
+          <Link to="/beauty">
             <img
-              src="https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71nwqPZaNRL._SX3000_.jpg"
+              src="val.jpg"
               className={styles.image}
-              alt="valentine_image_product"
-            />
-          </Link>
-
-          <Link to="/">
-            <img
-              src="https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71Ie3JXGfVL._SX3000_.jpg"
-              className={styles.image}
-              alt="books_image_product"
+              alt="valentine products"
             />
           </Link>
         </Carousel>

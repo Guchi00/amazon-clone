@@ -49,11 +49,13 @@ export function Product(props: ProductProps) {
     message.success("item added to cart");
   };
 
+  console.log(image, "imageeeeee");
+
   return (
     <>
       <div className={styles.holder}>
         <Link to={`/product/${props.id}`} className={styles.image_container}>
-          <img src={image} alt={"product_image"} />
+          <img src={process.env.PUBLIC_URL + image} alt={"product_image"} />
         </Link>
         <div className={styles.other_items_holder}>
           <Link to={`/product/${props.id}`} className={styles.item_title}>

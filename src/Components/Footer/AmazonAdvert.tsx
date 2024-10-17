@@ -6,14 +6,14 @@ import styles from "./styles.module.css";
 export const AmazonAdvert = () => {
   return (
     <div className={styles.wrapper}>
-      {data.map((items) => (
+      {data.map((item) => (
         <AmazonAdvertItems
-          key={items.id}
+          key={item.id}
           items={[
-            items.advertOne,
-            items.advertTwo,
-            items.advertThree,
-            ...(items.advertFour ? [items.advertFour] : []),
+            item.advertOne,
+            item.advertTwo,
+            item.advertThree,
+            ...(item.advertFour ? [item.advertFour] : []),
           ]}
           // advertTwo={items.advertTwo}
           // advertThree={items.advertThree}
