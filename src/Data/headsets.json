@@ -1,31 +1,31 @@
 [
   {
     "id": 1,
-    "imageUrl": "https://m.media-amazon.com/images/I/615XO7VlPLL._AC_UF894,1000_QL80_.jpg",
+    "imageUrl": "headset1.jpg",
     "title": "SteelSeries New Arctis Nova 3 Multi-Platform Gaming Headset - Signature Arctis \n Sound - ClearCast Gen 2 Mic - PC, PS5/PS4, Xbox Series X|S, Switch, Mobile,Black",
     "cost": 142.99
   },
   {
     "id": 2,
-    "imageUrl": "https://m.media-amazon.com/images/I/61eFyV4WLLL._AC_UF894,1000_QL80_.jpg",
+    "imageUrl": "headset2.jpg",
     "title": "SteelSeries Arctis Nova 7 Wireless Multi-Platform Gaming Headset – Simultaneous (newline) Wireless \n 2.4GHz & Bluetooth – Comfort Design - Fast Charging 38Hr Battery – PC, PS, Switch, Mobile, Black",
     "cost": 99.8
   },
   {
     "id": 3,
-    "imageUrl": "https://m.media-amazon.com/images/I/61otYZ1ZA9L._AC_UF894,1000_QL80_.jpg",
+    "imageUrl": "headset3.jpg",
     "title": "BENGOO G9000 Stereo Gaming Headset for PS4 PC Xbox One PS5 Controller, Noise Cancelling \n Over Ear Headphones with Mic, LED Light, Bass Surround, Soft Memory Earmuffs (Blue)",
     "cost": 59.5
   },
   {
     "id": 4,
-    "imageUrl": "https://m.media-amazon.com/images/I/71-+0U8z-ZL._AC_UF894,1000_QL80_.jpg",
+    "imageUrl": "headset4.jpg",
     "title": "Turtle Beach Recon 200 Gen 2 Powered Gaming Headset for Xbox Series X, Xbox Series S, & \n Xbox One, PlayStation 5, PS4, Nintendo Switch, Mobile, & PC with 3.5mm connection - White",
     "cost": 39.9
   },
   {
     "id": 5,
-    "imageUrl": "https://m.media-amazon.com/images/I/61exUSWiSoL._AC_UF894,1000_QL80_.jpg",
+    "imageUrl": "headset5.jpg",
     "title": "RIG 400HC Multiplatform Performance Gaming Headset with Removable Noise Canceling Microphone \n for Xbox Series X|S, Xbox One, Playstation, PS4, PS5, Nintendo Switch, and PC - Black",
     "cost": 198
   }

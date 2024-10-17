@@ -60,7 +60,7 @@ export const MultipleCarouselHomes = () => {
             See more
           </Link>
         </span>
-        <Slider {...settings}>
+        <Slider {...settings} autoplay>
           {homeData.map((product) => (
             <CarouselMultiple
               key={product.id}

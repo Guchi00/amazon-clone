@@ -21,18 +21,6 @@ export const AmazonAdvertItems = (props: INewAdvertItems) => {
             ))}
           </Link>
         ))}
-        {/* <Link to="" className={styles.adverts}>
-          {advertOne}
-        </Link>
-        <Link to="" className={styles.adverts}>
-          {advertTwo}
-        </Link>
-        <Link to="" className={styles.adverts}>
-          {advertThree}
-        </Link>
-        <Link to="" className={styles.adverts}>
-          {advertFour}
-        </Link> */}
       </div>
     </>
   );
