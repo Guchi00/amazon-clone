@@ -536,6 +536,17 @@
   margin-top: 7px;
 }
 
+.at_amazon_dot_com_ugochi {
+  color: grey;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 90px;
+  border-top: solid 1px rgb(58, 69, 83);
+}
+
 @media only screen and (max-width: 600px) {
   .at_amazon_dot_com {
     font-size: 9px;

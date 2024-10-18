@@ -24,9 +24,14 @@ export const UserConditionOfUse = () => {
           <CloseIcon className={styles.close} />
         </div>
       </div>
+
       <span className={styles.at_amazon_dot_com}>
         © 1996-2024, Amazon.com, Inc. or its affiliates
       </span>
+
+      <div className={styles.at_amazon_dot_com_ugochi}>
+        <span>Replicated and developed by Ugochi Iwuchukwu.</span>
+      </div>
     </div>
   );
 };
